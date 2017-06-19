@@ -3,6 +3,11 @@ var browserSync = require('browser-sync');
 var sass        = require('gulp-sass');
 var prefix      = require('gulp-autoprefixer');
 var cp          = require('child_process');
+var concat      = require('gulp-concat-util');
+var rename      = require('gulp-rename');
+var uncss       = require('gulp-uncss');
+var cleanCSS    = require('gulp-clean-css');
+var uglify      = require('gulp-uglify');
 
 var jekyll   = process.platform === 'win32' ? 'jekyll.bat' : 'jekyll';
 var messages = {
@@ -46,9 +51,48 @@ gulp.task('sass', function () {
             onError: browserSync.notify
         }))
         .pipe(prefix(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
+        .pipe(cleanCSS())
         .pipe(gulp.dest('_site/css'))
         .pipe(browserSync.reload({stream:true}))
         .pipe(gulp.dest('css'));
+});
+
+gulp.task('uncss', function() {
+  return gulp.src('css/main.css')
+    .pipe(gulp.dest('_site/css'))
+    .pipe(cleanCSS())
+    .pipe(uncss({
+      html: ['*.html', '_includes/*.html','_layouts/*.html']
+    }))
+    .pipe(browserSync.reload({stream:true}))
+    .pipe(gulp.dest('css'));
+});
+
+gulp.task('sass:critical', function() {
+  return gulp.src('css/main.css')
+    // wrap with style tags
+    .pipe(concat.header('<style>'))
+    .pipe(concat.footer('</style>'))
+    // convert it to an include file
+    .pipe(rename({
+        basename: 'criticalCSS',
+        extname: '.html'
+      }))
+    // insert file in the includes folder
+    .pipe(gulp.dest('_includes/'));
+});
+
+//Concantenate and minify JS files
+var jsFiles = 'js/*.js',
+    jsDest = 'js/dist';
+
+gulp.task('scripts', function() {
+return gulp.src(jsFiles)
+    .pipe(concat('scripts.js'))
+    .pipe(gulp.dest(jsDest))
+    .pipe(rename('scripts.min.js'))
+    .pipe(uglify())
+    .pipe(gulp.dest(jsDest));
 });
 
 /**
@@ -58,6 +102,7 @@ gulp.task('sass', function () {
 gulp.task('watch', function () {
     gulp.watch('_scss/*.scss', ['sass']);
     gulp.watch(['*.html', '_layouts/*.html', '_posts/*'], ['jekyll-rebuild']);
+    gulp.watch('js/*.js', ['scripts']);
 });
 
 /**
