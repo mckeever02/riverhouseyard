@@ -1,5 +1,5 @@
 name: Riverhouse
-tagline: A new wave of office and retail space in Cathedral Quarter
+tagline: A new wave of office and retail space in Belfast City Centre's Cathedral Quarter. Launching Q2 2018.
 markdown: redcarpet
 highlighter: rouge # or rouge or null
 exclude: ["node_modules", "gulpfile.js", "package.json"]
@@ -11,3 +11,6 @@ website: http://riverhousebelfast.co.uk
 imageurl: /images/
 
 baseurl: //riverhousebelfast.co.uk
+
+gems:
+  - jekyll-sitemap
