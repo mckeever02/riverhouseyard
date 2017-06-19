@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>{{ page.title }}</title>
+        <meta name="description" content="{{site.tagline}}">
+        <meta name="viewport" content="width=device-width">
+
+        <link rel="icon" type="image/png" sizes="32x32" href="{{site.baseurl}}{{site.imageurl}}/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="{{site.baseurl}}{{site.imageurl}}/favicon-16x16.png">
+        <link rel="mask-icon" href="{{site.baseurl}}{{site.imageurl}}/safari-pinned-tab.svg" color="#555555">
+        <meta name="theme-color" content="#ffffff">
+
+
+        <!-- Disable tap highlight on IE -->
+        <meta name="msapplication-tap-highlight" content="no">
+
+        <!-- Web Application Manifest -->
+        <link rel="manifest" href="{{site.baseurl}}/manifest.json">
+
+        <!-- Add to homescreen for Chrome on Android -->
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="application-name" content="{{site.name}}">
+        <link rel="icon" sizes="192x192" href="{{site.baseurl}}{{site.imageurl}}android-chrome-192x192.png">
+
+        <!-- Add to homescreen for Safari on iOS -->
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="#ffffff">
+        <meta name="apple-mobile-web-app-title" content="{{site.name}}">
+        <link rel="apple-touch-icon" href="{{site.baseurl}}{{site.imageurl}}apple-touch-icon.png">
+
+        <!-- Tile icon for Win8 (144x144 + tile color) -->
+        <meta name="msapplication-TileImage" content="images/mstile-150x150.png">
+        <meta name="msapplication-TileColor" content="#ffffff">
+
+        <!-- Open Graph Metadata -->
+        <meta property="og:url" content="{{site.website}}" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="{%if page.title%} {{page.title}} {%else%} {{site.name}} {%endif%}" />
+        <meta property="og:description" content="{%if page.description%} {{page.description}} {%else%} {{site.tagline}} {%endif%}" />
+        <meta property="og:image" content="{{site.website}}{{site.imageurl}}/card-image.png" />
+
+        <!-- Twitter Card Metadata -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="{{site.social.twitter.username | prepend: "@" }}" />
+        <meta name="twitter:title" content="{%if page.title%} {{page.title}} {%else%} {{site.name}} {%endif%}" />
+        <meta name="twitter:description" content="{%if page.description%} {{page.description}} {%else%} {{site.description}} {%endif%}" />
+        <meta name="twitter:image" content="{{site.website}}{{site.imageurl}}/card-image.png" />
+
+        <script>
+        // Google Analytics
+        var gaProperty = 'UA-39366656-16';
+
+        // Disable tracking if the opt-out cookie exists.
+        var disableStr = 'ga-disable-' + gaProperty;
+        if (document.cookie.indexOf(disableStr + '=true') > -1) {
+          window[disableStr] = true;
+          if (document.documentElement) {
+            document.documentElement.className += " disable-ga";
+          }
+        }
+
+        if (navigator.userAgent.indexOf("Speed Insights") == -1) {
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+          ga('create', gaProperty, 'auto');
+          ga('send', 'pageview');
+        }
+
+        // Opt-out function
+        function gaOptout() {
+          document.cookie = disableStr + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/';
+          window[disableStr] = true;
+          if (document.documentElement) {
+            document.documentElement.className += " disable-ga";
+          }
+        }
+        // End Google Analytics
+
+
+        </script>
+
+        <!-- Typekit load -->
+        <script>
+          (function(d) {
+            var config = {
+              kitId: 'bsc5zdr',
+              scriptTimeout: 3000,
+              async: true
+            },
+            h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+          })(document);
+        </script>
+
+
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/css/main.css">
+
+    </head>
+    <body class="bg-black white sans-serif">
+
+      {{ content }}
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+      <script>
+      $(document).ready(function() {
+        var $contactForm = $('#contact-form');
+        $contactForm.submit(function(e) {
+          e.preventDefault();
+          $.ajax({
+            url: '//formspree.io/{{site.email}}',
+            method: 'POST',
+            data: $(this).serialize(),
+            dataType: 'json',
+            beforeSend: function() {
+              $contactForm.append('<div class="tc alert-loading bg-gray pa3 mt3 f6">Sending message…</div>');
+            },
+            success: function(data) {
+              $contactForm.find('.alert-loading').hide();
+              $contactForm.append('<div class="tc bg-green pa3 mt3 f6">Message sent!</div>');
+            },
+            error: function(err) {
+              $contactForm.find('.alert-loading').hide();
+              $contactForm.append('<div class="tc bg-red pa3 mt3 f6">Oops, there was an error. Try emailing {{site.email}} directly</div>');
+            }
+          });
+        });
+      });
+      </script>
+
+
+
+    </body>
+</html>

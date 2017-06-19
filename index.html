@@ -1,0 +1,96 @@
+---
+layout: default
+title: Riverhouse - Office and retail space in Cathedral Quarter
+---
+
+<div class="intro pt3 pt6-ns contain cover-ns cb">
+  <div class="mw6-m mw9-l ph3 ph0-ns center">
+    <h1 class="logo-md logo-bg contain bg-center fw5">{{site.name}}</h1>
+  </div>
+
+  <div class="mw5-m mw8-l center ph3 ph0-ns">
+    <div class="w-100 w4-ns mt4 mt5-ns">
+      <h2 class="ttu f3 normal gray lh-title fw5">{{site.tagline}}</h2>
+      <hr class="b--gray mt4 mt5-ns">
+    </div>
+  </div>
+</div>
+
+<div class="ph3 pt6 mt6 mt0-ns mid cb">
+  <img class="rotate-90 nl5 logo-lg dn db-l" src="{{site.baseurl}}/images/logo.svg" alt="Riverhouse logo">
+  <div class="mw9 center flex flex-column flex-row-ns items-end nt7">
+    <div class="w-30-ns pr4-ns order-1 order-0-ns">
+      <h3 class="ttu f3 normal gray mb4 fw5">Launching<br> Q2 2018</h3>
+      <p class="f4 lh-copy">The best location makes for the best amenities, River House Yard is just a minute’s walk from the famous Merchant Hotel and Belfast’s best bars, cafes and restaurants. Entertaining clients, socialising with staff will never be easier or more convenient. It also neighbours the best gyms, and Victoria Square.</p>
+      <hr class="b--gray mt4 mb4 mb0-ns mt5-ns">
+
+    </div>
+    <div class="w-70-ns pl4-ns order-0 order-1-ns">
+      <img src="{{site.baseurl}}/images/city-centre-map.png" alt="Belfast City Centre Map">
+    </div>
+
+
+  </div>
+</div>
+
+<div class="ph3 pt6-ns bottom cb">
+  <img class="rotate-90 logo-sm dn db-l" src="{{site.baseurl}}/images/logo.svg" alt="Riverhouse logo">
+  <div class="mw9 center flex flex-column flex-row-ns nt7">
+    <div class="w-100 w-50-m w-30-l pr4-ns">
+      <h2 class="ttu f2 normal mb2 mb4-ns fw5">Get in touch</h2>
+      <form id="contact-form" action="https://formspree.io/{{site.email}}" method="POST">
+        <fieldset class="ba b--transparent ph0 mh0">
+          <legend class="ph0 mh0 fw6 clip">Contact us</legend>
+          <div class="mt4">
+            <label class="db fw4 lh-copy f5 ttu gray" for="name">Name*
+            <input class="pv2 input-reset bb b--gray bg-transparent w-100 measure focus-b focus-b--white outline-0 white" required type="text" name="name"  id="name">
+            </label>
+          </div>
+          <div class="mt4">
+            <label class="db fw4 lh-copy f5 ttu gray" for="email">Email*
+            <input class="pv2 input-reset bb b--gray bg-transparent w-100 measure focus-b focus-b--white outline-0 white" required type="email" name="email"  id="email">
+            </label>
+          </div>
+          <div class="mt4">
+            <label class="db fw4 lh-copy f5 ttu gray" for="email">Tel
+            <input class="pv2 input-reset bb b--gray bg-transparent w-100 measure focus-b focus-b--white outline-0 white" type="tel" name="tel"  id="tel">
+            </label>
+          </div>
+          <div class="mt4">
+            <label class="db fw4 lh-copy f5 ttu gray" for="email">Query*
+            <textarea class="pv2 input-reset bb b--gray bg-transparent w-100 measure focus-b focus-b--white outline-0 white" required name="message" id="message"></textarea>
+            </label>
+          </div>
+          <input class="dn" type="text" name="_gotcha">
+        	<input type="hidden" name="_subject" value="New Contact Form Submission">
+          <input type="hidden" name="_cc" value="david.wright@cbre.com,rory.mcconnell@mcconnellproperty.com" />
+        </fieldset>
+        <div class="mt4">
+          <button type="submit" class="button-reset pv3 lh-solid white fw5 ba b--transparent w-100 submit bg-animate bg-gray hover-bg-white hover-black link ttu f5">Submit</button>
+        </div>
+      </form>
+
+    </div>
+    <div class="w-100 w-50-mw-70-l pt4 pt0-ns pl6-ns">
+      <div class="flex flex-column flex-row-ns justify-around flex-wrap items-center">
+        <div class="w-100 w-third-l pv3 ph4 pa4-ns">
+          <img class="mb3" src="{{site.baseurl}}/images/castleforge-logo.svg" alt="Castleforge logo">
+          <a class="link gray hover-white mb2 db f4" href="tel:07562989805">+44 (0) 75 6298 9805</a>
+          <a class="link gray hover-white db f4" href="mailto:rpittaway@castleforgepartners.com">rpittaway@castleforgepartners.com</a>
+        </div>
+        <div class="w-100 w-third-l pv3 ph4 pa4-ns">
+          <img class="mb3" src="{{site.baseurl}}/images/cbre-logo.svg" alt="CBRE logo">
+          <a class="link gray hover-white mb2 db f4" href="tel:02890436745 ">+44 (0) 28 9043 6745 </a>
+          <a class="link gray hover-white db f4" href="mailto:david.wright@cbre.com">david.wright@cbre.com</a>
+        </div>
+        <div class="w-100 w-third-l pv3 ph4 pa4-ns">
+          <img class="mb3" src="{{site.baseurl}}/images/mcconnell-logo.svg" alt="McConnell logo">
+          <a class="link gray hover-white mb2 db f4" href="tel:02890205902 ">+44 (0) 28 9020 5902</a>
+          <a class="link gray hover-white db f4" href="mailto:rory.mcconnell@mcconnellproperty.com">rory.mcconnell@mcconnellproperty.com</a>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+</div>

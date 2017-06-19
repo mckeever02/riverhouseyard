@@ -1,0 +1,85 @@
+
+// Converted Variables
+
+
+// Custom Media Query Variables
+
+
+/*
+
+  STYLES
+
+  Add custom styles here.
+
+*/
+
+.logo-bg {
+  height: 110px;
+  background-image: url('../images/logo.svg');
+  text-indent: -9999px;
+}
+
+.intro, .mid, .bottom {
+  background-repeat: no-repeat;
+}
+
+.intro {
+  background-image: url('../images/header-bg.svg');
+  background-position: bottom center;
+  padding-bottom: 20rem;
+  @media #{$breakpoint-medium} {
+    padding-bottom: 70rem;
+  }
+  @media #{$breakpoint-large} {
+    padding-bottom: 50rem;
+  }
+  @media #{$breakpoint-xlarge} {
+    padding-bottom: 80rem;
+  }
+}
+
+.mid {
+  padding-bottom: 15rem;
+  @media #{$breakpoint-large} {
+    padding-bottom: 20rem;
+    background-image: url('../images/mid-bg.svg');
+    background-position: bottom left;
+    background-size: 20%;
+  }
+  @media #{$breakpoint-xlarge} {
+    padding-bottom: 30rem;
+  }
+}
+
+.bottom {
+  background-image: url('../images/bottom-bg.svg');
+  background-position: bottom right;
+  background-size: contain;
+  padding-bottom: 20rem;
+  @media #{$breakpoint-not-small} {
+    padding-bottom: 35rem;
+    background-size: 80%;
+  }
+  @media #{$breakpoint-large} {
+    padding-bottom: 40rem;
+  }
+  @media #{$breakpoint-xlarge} {
+    padding-bottom: 60rem;
+  }
+}
+
+.logo-md {
+  width: 275px;
+}
+
+.logo-lg {
+  width: 335px;
+}
+
+.logo-sm {
+  width: 150px;
+}
+
+input,textarea {
+  border: none;
+}
