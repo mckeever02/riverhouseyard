@@ -1,7 +1,7 @@
 name: Riverhouse
 tagline: A new wave of office and retail space in Cathedral Quarter
 markdown: redcarpet
-highlighter: pygments # or rouge or null
+highlighter: rouge # or rouge or null
 exclude: ["node_modules", "gulpfile.js", "package.json"]
 
 email: rpittaway@castleforgepartners.com
@@ -9,3 +9,5 @@ email: rpittaway@castleforgepartners.com
 website: http://riverhousebelfast.co.uk
 
 imageurl: /images/
+
+baseurl: //riverhousebelfast.co.uk
