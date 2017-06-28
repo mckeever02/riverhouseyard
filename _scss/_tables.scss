@@ -40,3 +40,7 @@
 .stripe-dark:nth-child(odd) {
   background-color: $black-10;
 }
+
+.table-fixed {
+  table-layout: fixed;
+}

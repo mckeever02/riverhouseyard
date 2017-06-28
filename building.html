@@ -1,0 +1,132 @@
+---
+layout: default
+title: River House - The Building
+---
+
+<div style="background-image: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.0)), url('/images/riverhouse-outside.jpg')" class="intro bg-top cover pt3 pt4-m pt6-l">
+  {%include navigation.html%}
+</div>
+
+<div class="bg-white">
+
+  <div class="pt3 pt5-ns bb b--black ph3 ph0-ns">
+    <div class="mw9-l center">
+      <div class="flex flex-column flex-row-ns">
+        <div class="db w-40-ns pr5-ns pb4 pb0-ns">
+          <h1 class="ttu f3 f2-l gray fw5">Features</h1>
+          <p class="fw5 f4-ns black">River House is the ideal space for any progressive corporate organisation. Boasting superb finishes, excellent bathroom facilities, flexible space planning and an abundance of natural light, there is no other space like this in Belfast. </p>
+        </div>
+        <div class="db w-60">
+          <img src="/images/riverhouse-outline.png" srcset="/images/riverhouse-outline.png 1x, /images/riverhouse-outline-2x.png 2x" alt="Outline of Riverhouse">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="pv3 pv5-ns ph3 ph0-ns">
+    <div class="mw9-l center">
+      <div class="flex flex-wrap w-100">
+        {% for feature in site.features %}
+          <div class="w-100 w-third-ns">
+            <div class="cf">
+              <hr class="fl mb2 mb3-ns w-40">
+            </div>
+            <p class="fw5 f4-ns black mb3 mb5-ns measure-tight-ns">{{feature.name}}</p>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+
+  <div class="pv3 pv5-ns ph3 ph0-ns">
+    <div class="mw9-l center">
+      <h2 class="ttu f3 f2-l normal gray fw5">Floorplans</h2>
+      <div class="cf">
+        <hr class="fl mb3 w-30-m w-10-l">
+      </div>
+
+      <img class="w-100 mt3" src="/images/riverhouse-outline.png" srcset="/images/floorplan-outline.png 1x, /images/floorplan-outline-2x.png 2x" alt="Outline of floorplan">
+
+    </div>
+  </div>
+
+  <div class="pv3 pv5-ns ph3 ph0-ns">
+    <div class="mw9-l center">
+      <h2 class="ttu f3 f2-l gray fw5 mb0">River House — Proposed Floor Areas</h2>
+      <h3 class="gray f4-ns ma0 mb2">(IPMS 3 / Net Internal)</h3>
+
+      <div class="overflow-auto">
+        <table class="f4-ns mt3 mt5-ns w-100 center gray table-fixed" cellspacing="0">
+          <thead>
+            <tr>
+              <th class="fw6 bb b--black-20 tl pb2 pr3 bg-white">Retail / Restaurant</th>
+              <th class="fw6 bb b--black-20 tl pb2 pr3 bg-white">Sq M</th>
+              <th class="fw6 bb b--black-20 tl pb2 pr3 bg-white">Sq F</th>
+            </tr>
+          </thead>
+          <tbody class="lh-copy">
+            {% for cell in site.floorspace %}
+            <tr>
+              <td class="pv2 pr3">{{cell.floor}}</td>
+              <td class="pv2 pr3">{{cell.sqm}}</td>
+              <td class="pv2 pr3">{{cell.sqf}}</td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+
+      <div class="overflow-auto">
+        <table class="f4-ns mt4 mt5-ns w-100 center gray table-fixed" cellspacing="0">
+          <thead>
+            <tr>
+              <th class="fw6 bb b--black-20 tl pb2 pr3 bg-white">Offices</th>
+              <th class="fw6 bb b--black-20 tl pb2 pr3 bg-white">Sq M</th>
+              <th class="fw6 bb b--black-20 tl pb2 pr3 bg-white">Sq F</th>
+            </tr>
+          </thead>
+          <tbody class="lh-copy">
+            {% for cell in site.offices %}
+            <tr>
+              <td class="pv2 pr3">{{cell.floor}}</td>
+              <td class="pv2 pr3">{{cell.sqm}}</td>
+              <td class="pv2 pr3">{{cell.sqf}}</td>
+            </tr>
+            {% endfor %}
+          </tbody>
+          <tfoot>
+            <tr>
+              <td class="pv4 pr3 fw5">Total Space</td>
+              <td class="pv4 pr3 fw5">7,348</td>
+              <td class="pv4 pr3 fw5">80,052</td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div class="pt3 pt5-ns">
+    <div class="mw9-l center ph3 ph0-ns">
+      <h2 class="ttu f3 f2-l normal gray fw5">Gallery</h2>
+    </div>
+    <div class="flex flex-wrap w-100">
+      <div style="background-image: url('/images/reception-area1.jpg')" class="relative w-100 w-50-l grid-item cover bg-center flex items-end justify-start">
+        <div class="w-100 absolute bottom-0 tc bg-black-50">
+          <h3 class="ttu f3 f2-l gray fw5">Reception Area</h3>
+        </div>
+      </div>
+      <div style="background-image: url('/images/reception-area2.jpg')" class="relative w-100 w-50-l grid-item cover bg-center flex items-end justify-start">
+        <div class="w-100 absolute bottom-0 tc bg-black-50">
+          <h3 class="ttu f3 f2-l gray fw5">Reception Area</h3>
+        </div>
+      </div>
+    </div><!-- /flex -->
+  </div>
+
+<div class="bg-black">
+  {%include contact.html%}
+</div>
+
+
+</div><!-- /bg-white -->

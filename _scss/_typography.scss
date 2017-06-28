@@ -34,6 +34,10 @@
   max-width: 20em;
 }
 
+.measure-tight {
+  max-width: 10em;
+}
+
 /* Book paragraph style - paragraphs are indented with no vertical spacing. */
 .indent {
   text-indent: 1em;
@@ -63,6 +67,9 @@
   .measure-narrow-ns {
     max-width: 20em;
   }
+  .measure-tight-ns {
+    max-width: 10em;
+  }
   .indent-ns {
     text-indent: 1em;
     margin-top: 0;
@@ -88,6 +95,9 @@
   .measure-narrow-m {
     max-width: 20em;
   }
+  .measure-tight-m {
+    max-width: 10em;
+  }
   .indent-m {
     text-indent: 1em;
     margin-top: 0;
@@ -112,6 +122,9 @@
   }
   .measure-narrow-l {
     max-width: 20em;
+  }
+  .measure-tight-l {
+    max-width: 10em;
   }
   .indent-l {
     text-indent: 1em;

@@ -23,10 +23,10 @@
   background-repeat: no-repeat;
 }
 
-.intro {
+.intro-home {
   background-image: url('../images/header-bg.svg');
-  background-position: bottom center;
-  padding-bottom: 20rem;
+  background-position: bottom right;
+  //padding-bottom: 20rem;
   @media #{$breakpoint-medium} {
     padding-bottom: 70rem;
   }
@@ -36,6 +36,22 @@
   @media #{$breakpoint-xlarge} {
     padding-bottom: 80rem;
   }
+}
+
+.intro-location {
+  background-image: url('../images/location-bg.jpg');
+}
+
+.bg-culture {
+  background-image: url('../images/culture-bg.jpg');
+}
+
+.bg-cathedral-q {
+  background-image: url('../images/duke-of-york-bg.jpg');
+}
+
+.bg-skyline {
+  background-image: url('../images/belfast-skyline-bg.jpg');
 }
 
 .mid {
@@ -82,4 +98,42 @@
 
 input,textarea {
   border: none;
+}
+
+.grid-item {
+  min-height: 300px;
+  @media #{$breakpoint-medium} {
+    min-height: 512px;
+  }
+  @media #{$breakpoint-large} {
+    min-height: 700px;
+  }
+}
+
+.grid-building {
+  background-image: url(../images/riverhouse-building.jpg);
+}
+
+.grid-location {
+  background-image: url(../images/duke-of-york.jpg);
+}
+
+.grid-history {
+  background-image: url(../images/history.jpg);
+}
+
+.hr-transition {
+  width: 0;
+}
+
+.icon-md {
+  max-width: 90px;
+}
+
+.icon-lg {
+  max-width: 200px;
+}
+
+#map {
+  height: 100vh;
 }

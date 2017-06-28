@@ -1,4 +1,4 @@
-name: Riverhouse
+name: River House
 tagline: A new wave of office and retail space in Belfast City Centre's Cathedral Quarter. Launching Q2 2018.
 markdown: redcarpet
 highlighter: rouge # or rouge or null
@@ -10,7 +10,90 @@ website: http://riverhousebelfast.co.uk
 
 imageurl: /images/
 
+permalink: pretty
+
 baseurl: //riverhousebelfast.co.uk
 
 gems:
   - jekyll-sitemap
+
+# Navigation
+navigation:
+  - title: Home
+    url: //riverhousebelfast.co.uk
+  - title: Building
+    url: /building/
+  - title: History
+    url: /history/
+  - title: Location
+    url: /location/
+  - title: Downloads
+    url: /downloads/
+
+features:
+  - name: Generous double-height in reception area(s)
+  - name: New High-Rise glazed Curtain Wall System
+  - name: Raised access flooring
+  - name: Car park
+  - name: 6,000 sq ft. floorplates
+  - name: Generous bike storage space
+  - name: Multiple high-speed data networks
+  - name: Excellent natural light
+
+floorspace:
+  - floor: Ground Floor Unit 1
+    sqm: 218
+    sqf: 2,347
+  - floor: Ground Floor Unit 2
+    sqm: 215
+    sqf: 2,314
+  - floor: Ground Floor Unit 3
+    sqm: 120
+    sqf: 1,292
+
+offices:
+  - floor: 1st Floor Suite 1
+    sqm: 218
+    sqf: 2,347
+  - floor: 1st Floor Suite 2
+    sqm: 369
+    sqf: 3,972
+  - floor: 2nd Floor
+    sqm: 550
+    sqf: 6,000
+  - floor: 3rd Floor
+    sqm: 550
+    sqf: 6,000
+  - floor: 4th Floor
+    sqm: 550
+    sqf: 6,000
+  - floor: 5th Floor
+    sqm: 550
+    sqf: 6,000
+  - floor: 6th Floor
+    sqm: 550
+    sqf: 6,000
+  - floor: 7th Floor
+    sqm: 550
+    sqf: 6,000
+  - floor: 8th Floor
+    sqm: 550
+    sqf: 6,000
+  - floor: 9th Floor
+    sqm: 550
+    sqf: 6,000
+  - floor: 10th Floor
+    sqm: 550
+    sqf: 6,000
+  - floor: 11th Floor
+    sqm: 550
+    sqf: 6,000
+  - floor: 12th Floor
+    sqm: 550
+    sqf: 6,000
+  - floor: 13th Floor
+    sqm: 550
+    sqf: 6,000
+  - floor: 14th Floor
+    sqm: 161
+    sqf: 1,733
