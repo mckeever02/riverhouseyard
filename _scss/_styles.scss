@@ -51,7 +51,9 @@
 }
 
 .bg-skyline {
-  background-image: url('../images/belfast-skyline-bg.jpg');
+  @media #{$breakpoint-not-small} {
+    background-image: url('../images/belfast-skyline-bg.jpg');
+  }
 }
 
 .mid {

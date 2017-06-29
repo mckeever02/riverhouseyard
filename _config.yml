@@ -125,3 +125,23 @@ team:
     title: Principle Designer
   - name: MAC Group
     title: Principle Contractor
+
+timeline:
+  - date: 1600s
+    description: Once occupied by docks of the Merchant City, River House is at the heart of Belfast’s unique history.
+  - date: 1790s
+    description: The United Irishmen met under the guise of "The Muddlers Club" at Peggy Barclays Tavern in Sugarhouse Entry. The tavern is long gone but the entry is still there beside River House.
+  - date: 1804
+    description: The River Farset culverted to create High St. It still flows underneath to this day.
+  - date: 1816
+    description: With the new church of St Anne full to bursting, a new church, St Georges, is erected on High Street, opposite where River House now sits.
+  - date: 1967
+    description: The River House Office building undergoes development. The end result sees Waring and Skipper Streets connected.
+  - date: 2012
+    description: Belfast’s Metropolitan Arts Centre (The MAC) opens at St Anne’s Square in Cathedral Quarter, bringing further life to an already vibrant location.
+  - date: 2015
+    description: Belfast Bikes are introduced across the city. Over 191,000 journeys increasing by 27% each year.
+  - date: 2017
+    description: Located directly in front of River House, work commences on Belfast Cycle Network, involving major alterations and cycle way upgrades.
+  - date: 2018
+    description: The development of River House is completed in Q2, 2018, offering 80,000 sq ft of office and retail space over 13 floors.

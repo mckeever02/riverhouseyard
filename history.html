@@ -1,0 +1,34 @@
+---
+layout: default
+title: River House - The History
+description: River House Is Set To Lift Belfast To Another Level, Creating Office Space For Both Work And Play.
+---
+
+<div class="bg-white pt3 pt4-m pt6-l">
+
+  {%include navigation.html%}
+
+</div>
+
+<div class="bg-skyline pb5-ns cover bg-fixed-ns overflow-hidden-ns bg-center w-100 h-100">
+  <div class="mw8 center ph3 bg-white pa5-ns">
+
+    <h1 class="ttu f3 f2-l gray fw5 ma0 mb4">History</h1>
+
+    {% for item in site.timeline %}
+    <div class="flex flex-column flex-row-ns mb5-ns">
+      <div class="w-100 w-50-ns bt-ns b--gray mr5-ns pv4 order-1 order-0-ns">
+        <h2 class="f1 gray fw5 ma0 mb3">{{item.date}}</h2>
+        <p class="black fw5 f4-ns lh-copy">{{item.description}}</p>
+      </div>
+      <div class="w-100 w-50-ns bt b--gray bn-ns pt4 pt0-ns order-0 order-1-ns">
+        <img src="/images/{{item.date}}.jpg" alt="{{item.date}}">
+      </div>
+    </div><!-- /flex -->
+    {% endfor %}
+
+  </div><!-- /mw8 -->
+</div><!-- /bg-skyline -->
+
+
+</div><!-- /bg-white -->
