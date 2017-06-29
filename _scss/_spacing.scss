@@ -196,6 +196,7 @@ $spacing-extra-extra-extra-large: 16rem !default;
 .mr5  {  margin-right: $spacing-extra-large; }
 .mr6 {  margin-right: $spacing-extra-extra-large; }
 .mr7 { margin-right: $spacing-extra-extra-extra-large; }
+.mr-auto {margin-right: auto;}
 
 .mb0  {  margin-bottom: $spacing-none; }
 .mb1 {  margin-bottom: $spacing-extra-small; }
@@ -418,6 +419,8 @@ $spacing-extra-extra-extra-large: 16rem !default;
   .mr5-ns  {  margin-right: $spacing-extra-large; }
   .mr6-ns {  margin-right: $spacing-extra-extra-large; }
   .mr7-ns { margin-right: $spacing-extra-extra-extra-large; }
+  .mr-auto-ns {margin-right: auto;}
+
 
   .mb0-ns  {  margin-bottom: $spacing-none; }
   .mb1-ns {  margin-bottom: $spacing-extra-small; }
@@ -953,4 +956,3 @@ $spacing-extra-extra-extra-large: 16rem !default;
     margin-right: $spacing-extra-extra-extra-large;
   }
 }
-

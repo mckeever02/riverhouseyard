@@ -97,3 +97,31 @@ offices:
   - floor: 14th Floor
     sqm: 161
     sqf: 1,733
+
+downloads:
+  - name: River House Brochure
+    link: riverhousebrochure.pdf
+  - name: Specification Sheets
+    link: specsheets.pdf
+  - name: Floor Plans
+    link: floorplans.pdf
+  - name: DWG Files
+    link: dwg-files.zip
+
+team:
+  - name: Adrian Poucher – Malcolm Hollis LLP
+    title: Project Manager
+  - name: John Lee – Povall Worthington
+    title: Architect
+  - name: Michael Riordan – Linesight
+    title: Cost Consultant
+  - name: Thomas Lehd – Lehding Services Design
+    title: M&E Engineers
+  - name: Christopher Reynolds – Brian W Murray
+    title: Structural Engineers
+  - name: Tony McParland – Jeremy Gardner Associates
+    title: Fire Engineers
+  - name: Paul Cheyne – Hasco Europe
+    title: Principle Designer
+  - name: MAC Group
+    title: Principle Contractor

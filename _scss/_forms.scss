@@ -21,3 +21,10 @@
   border: 0;
   padding: 0;
 }
+
+.input-transition {
+  transition: width .2s ease-in;
+  &:focus {
+    width: 100%;
+  }
+}
