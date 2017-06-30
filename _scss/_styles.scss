@@ -38,8 +38,31 @@
   }
 }
 
+.intro-downloads {
+  background-image: url('../images/downloads-bg.svg');
+  background-position: bottom right;
+  @media #{$breakpoint-medium} {
+    padding-bottom: 70rem;
+  }
+  @media #{$breakpoint-large} {
+    padding-bottom: 50rem;
+  }
+}
+
 .intro-location {
-  background-image: url('../images/location-bg.jpg');
+  background-image:
+  linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.0)), url('../images/location-bg.svg'), url('../images/location-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover, 20%, cover;
+  background-position: center, bottom left, center;
+}
+
+.intro-building {
+  background-image:
+  linear-gradient(rgba(0, 0, 0, 0.90), rgba(0, 0, 0, 0.0)), url('../images/building-bg.svg');
+  background-position: center, bottom right;
+  background-size: cover, 20%;
+  background-repeat: no-repeat;
 }
 
 .bg-culture {
@@ -53,6 +76,13 @@
 .bg-skyline {
   @media #{$breakpoint-not-small} {
     background-image: url('../images/belfast-skyline-bg.jpg');
+  }
+}
+
+.bg-history {
+  @media #{$breakpoint-large} {
+    background-image: url('../images/history-bg.svg');
+    background-position: bottom right;
   }
 }
 
@@ -138,4 +168,38 @@ input,textarea {
 
 #map {
   height: 100vh;
+}
+
+.frame {
+  z-index: -1;
+  margin: auto;
+}
+
+.slider {
+  height: 110%;
+  transition: 1s;
+}
+
+.slide {
+  margin-right: -4px;
+}
+
+.arrow {
+  width: 35px;
+}
+
+#picture1 {
+  background-image: url('../images/slide1.jpg');
+}
+
+#picture2 {
+  background-image: url('../images/slide2.jpg');
+}
+
+#picture3 {
+  background-image: url('../images/slide3.jpg');
+}
+
+#picture4 {
+  background-image: url('../images/slide4.jpg');
 }

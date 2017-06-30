@@ -146,8 +146,23 @@
     <body class="bg-black white sans-serif">
 
 
-      <div style="background-image: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.0)), url('/images/riverhouse-outside.jpg')" class="intro min-vh-100 bg-bottom cover pt3 pt4-m pt6-l">
-  <nav class="db dt-l mw9 center pa3">
+      <div class="min-vh-100">
+  <div class="absolute intro-building w-100 h-100 z-1"></div>
+  <div class="pt3 pt4-m pt6-l">
+
+    <div id="frame" class="frame absolute top-0 left-0 w-100 h-100 overflow-hidden nowrap">
+      <div id="slider" class="slider relative">
+        <div class="slide w-100 h-100 dib bg-center cover" id="picture1"></div>
+        <div class="slide w-100 h-100 dib bg-center cover" id="picture2"></div>
+        <div class="slide w-100 h-100 dib bg-center cover" id="picture3"></div>
+        <div class="slide w-100 h-100 dib bg-center cover" id="picture4"></div>
+      </div>
+    </div><!-- /#frame -->
+
+ </div><!-- /pt3 -->
+
+  <div class="relative z-2">
+    <nav class="db dt-l mw9 center pa3">
   <a class="db gray dtc-ns v-mid mid-gray  hover-white link w-100 w-25-ns tc tl-ns mb2 mb0-ns" href="/" title="Home">
     <img src="/images/logo.svg" class="dib logo-md" alt="Riverhouse Belfast">
 
@@ -157,31 +172,39 @@
     
       
       
-      <a class=" link nav-link ttu gray hover-white f5-m f4 fw5 dib mr3 mr4-l" href="//riverhousebelfast.co.uk" title="Home">Home</a>
+      <a class=" link nav-link ttu  gray hover-white  f5-m f4 fw5 dib mr3 mr4-l" href="//riverhousebelfast.co.uk" title="Home">Home</a>
       </a>
     
       
       
-      <a class="active link nav-link ttu gray hover-white f5-m f4 fw5 dib mr3 mr4-l" href="/building/" title="Building">Building</a>
+      <a class="active link nav-link ttu  gray hover-white  f5-m f4 fw5 dib mr3 mr4-l" href="/building/" title="Building">Building</a>
       </a>
     
       
       
-      <a class=" link nav-link ttu gray hover-white f5-m f4 fw5 dib mr3 mr4-l" href="/history/" title="History">History</a>
+      <a class=" link nav-link ttu  gray hover-white  f5-m f4 fw5 dib mr3 mr4-l" href="/history/" title="History">History</a>
       </a>
     
       
       
-      <a class=" link nav-link ttu gray hover-white f5-m f4 fw5 dib mr3 mr4-l" href="/location/" title="Location">Location</a>
+      <a class=" link nav-link ttu  gray hover-white  f5-m f4 fw5 dib mr3 mr4-l" href="/location/" title="Location">Location</a>
       </a>
     
       
       
-      <a class=" link nav-link ttu gray hover-white f5-m f4 fw5 dib mr3 mr4-l" href="/downloads/" title="Downloads">Downloads</a>
+      <a class=" link nav-link ttu  gray hover-white  f5-m f4 fw5 dib mr3 mr4-l" href="/downloads/" title="Downloads">Downloads</a>
       </a>
     
   </div>
 </nav>
+
+
+    <div class="mt4">
+      <img class="arrow arrow-left rotate-180 pl4 ml4 glow o-50 pointer-hover" class="fr mt-20" src="/images/arrow-right.svg" title="Click to view next image" alt="Click to view next image">
+      <img class="arrow arrow-right absolute right-2 top-50 glow o-50 pointer-hover" src="/images/arrow-right.svg" title="Click to view next image" alt="Click to view next image">
+    </div>
+
+  </div>
 
 </div>
 
@@ -459,22 +482,22 @@
             <legend class="ph0 mh0 fw6 clip">Contact us</legend>
             <div class="mt4">
               <label class="db fw4 lh-copy f5 ttu gray" for="name">Name*
-              <input class="db w-70 input-transition pv2 r0 input-reset bb b--gray bg-transparent focus-b focus-b--white outline-0 white" required type="text" name="name"  id="name">
+              <input class="db w-90 input-transition pv2 r0 input-reset bb b--gray bg-transparent focus-b focus-b--white outline-0 white" required type="text" name="name"  id="name">
               </label>
             </div>
             <div class="mt4">
               <label class="db fw4 lh-copy f5 ttu gray" for="email">Email*
-              <input class="db w-70 input-transition pv2 input-reset bb b--gray bg-transparent focus-b focus-b--white outline-0 white" required type="email" name="email"  id="email">
+              <input class="db w-90 input-transition pv2 input-reset bb b--gray bg-transparent focus-b focus-b--white outline-0 white" required type="email" name="email"  id="email">
               </label>
             </div>
             <div class="mt4">
               <label class="db fw4 lh-copy f5 ttu gray" for="email">Tel
-              <input class="db w-70 input-transition pv2 input-reset bb b--gray bg-transparent focus-b focus-b--white outline-0 white" type="tel" name="tel"  id="tel">
+              <input class="db w-90 input-transition pv2 input-reset bb b--gray bg-transparent focus-b focus-b--white outline-0 white" type="tel" name="tel"  id="tel">
               </label>
             </div>
             <div class="mt4">
               <label class="db fw4 lh-copy f5 ttu gray" for="email">Query*
-              <textarea class="db w-70 input-transition pv2 input-reset bb b--gray bg-transparent focus-b focus-b--white outline-0 white" required name="message" id="message"></textarea>
+              <textarea class="db w-90 input-transition pv2 input-reset bb b--gray bg-transparent focus-b focus-b--white outline-0 white" required name="message" id="message"></textarea>
               </label>
             </div>
             <input class="dn" type="text" name="_gotcha">

@@ -1,6 +1,6 @@
 <nav class="db dt-l mw9 center pa3">
-  <a class="db gray dtc-ns v-mid mid-gray {%if page.inverted == true%}dim{%endif%} hover-white link w-100 w-25-ns tc tl-ns mb2 mb0-ns" href="/" title="Home">
-    <img {%if page.inverted == true%}src="/images/logo-white.svg"{%else%}src="/images/logo.svg"{%endif%} class="dib logo-md" alt="Riverhouse Belfast">
+  <a class="db gray dtc-ns v-mid mid-gray {%if page.navigation == 'white'%}dim{%endif%} hover-white link w-100 w-25-ns tc tl-ns mb2 mb0-ns" href="/" title="Home">
+    <img {%if page.navigation == 'white'%}src="/images/logo-white.svg"{%else%}src="/images/logo.svg"{%endif%} class="dib logo-md" alt="Riverhouse Belfast">
 
     {% if page.address == true %}
     <p class="fw5 f6-m f3-ns ml4-ns">48 High Street, Belfast</p>
@@ -12,7 +12,7 @@
       {% if page.url contains item.url %}
           {% assign class = 'active' %}
       {% endif %}
-      <a class="{{class}} link nav-link ttu {%if page.inverted != true%}gray hover-white{%else%}white hover-gray{%endif%} f5-m f4 fw5 dib mr3 mr4-l" href="{{ item.url }}" title="{{ item.title }}">{{ item.title }}</a>
+      <a class="{{class}} link nav-link ttu {% if page.navigation == 'white' %} white hover-gray {% elsif page.navigation == 'black' %} black hover-gray {% elsif page.navigation == 'gray' %} gray hover-white {%endif%} f5-m f4 fw5 dib mr3 mr4-l" href="{{ item.url }}" title="{{ item.title }}">{{ item.title }}</a>
       </a>
     {% endfor %}
   </div>
