@@ -12,7 +12,7 @@
       {% if page.url contains item.url %}
           {% assign class = 'active' %}
       {% endif %}
-      <a class="{{class}} link nav-link ttu {% if page.navigation == 'white' %} white hover-gray {% elsif page.navigation == 'black' %} black hover-gray {% elsif page.navigation == 'gray' %} gray hover-white {%endif%} f5-m f4 fw5 dib mr3 mr4-l" href="{{ item.url }}" title="{{ item.title }}">{{ item.title }}</a>
+      <a class="{{class}} link nav-link ttu {% if page.navigation == 'white' %} white hover-gray {% elsif page.navigation == 'black' %} black hover-gray {% elsif page.navigation == 'gray' %} gray hover-white {%endif%} pb2 pb0-ns f5-m f4 fw5 dib pr3 pr4-l" href="{{ item.url }}" title="{{ item.title }}">{{ item.title }}</a>
       </a>
     {% endfor %}
   </div>

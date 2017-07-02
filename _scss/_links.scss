@@ -32,6 +32,7 @@
   outline: 1px dotted currentColor;
 }
 
+
 .nav-link::after, .nav-link.active::after {
   content: '';
   margin-top: .3em;
@@ -42,6 +43,13 @@
   transition: width .3s;
 }
 
-.nav-link:hover::after, .nav-link.active::after {
+.nav-link.active::after {
   width: 70%;
+}
+
+//Disable this for iOS Safari as it causes a double-tap issue
+@media (pointer: fine) {
+  .nav-link:hover::after {
+    width: 70%;
+  }
 }

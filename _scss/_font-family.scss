@@ -12,17 +12,11 @@
 
 */
 
+$sans-serif: 'futura-pt', -apple-system, BlinkMacSystemFont, 'avenir next', avenir, 'helvetica neue', helvetica, ubuntu, roboto, noto, 'segoe ui', arial, sans-serif;
+
 
 .sans-serif {
-  font-family: 'futura-pt'
-               ,-apple-system,
-               BlinkMacSystemFont,
-               'avenir next', avenir,
-               'helvetica neue', helvetica,
-               ubuntu,
-               roboto, noto,
-               'segoe ui', arial,
-               sans-serif;
+  font-family: $sans-serif;
 }
 
 .serif {

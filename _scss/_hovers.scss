@@ -78,13 +78,36 @@
   transition: opacity .15s ease-in;
 }
 
-.hr-grow-child {
-  &:hover, &:focus {
-    hr {
-      transition: width .3s ease-in;
-      width: 100%;
+@media #{$breakpoint-not-small} {
+
+  .hide-child-ns .child {
+    opacity: 0;
+    transition: opacity .15s ease-in;
+  }
+  .hide-child-ns:hover  .child,
+  .hide-child-ns:focus  .child,
+  .hide-child-ns:active .child {
+    opacity: 1;
+    transition: opacity .15s ease-in;
+  }
+
+}
+
+@media #{$breakpoint-not-small} {
+
+  .hr-grow-child-ns {
+    &:hover, &:focus {
+      hr {
+        transition: width .3s ease-in;
+        width: 100%;
+      }
     }
   }
+
+  .hr-transition {
+    width: 0;
+  }
+
 }
 
 .underline-hover:hover,
