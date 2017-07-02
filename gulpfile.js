@@ -8,6 +8,9 @@ var rename      = require('gulp-rename');
 var uncss       = require('gulp-uncss');
 var cleanCSS    = require('gulp-clean-css');
 var uglify      = require('gulp-uglify');
+var gutil       = require('gulp-util');
+var critical    = require('critical');
+
 
 var jekyll   = process.platform === 'win32' ? 'jekyll.bat' : 'jekyll';
 var messages = {
@@ -66,6 +69,18 @@ gulp.task('uncss', function() {
     }))
     .pipe(browserSync.reload({stream:true}))
     .pipe(gulp.dest('css'));
+});
+
+gulp.task('critical', function () {
+  critical.generate({
+    base: './',
+    src: '_site/index.html',
+    css: '_site/css/main.css',
+    dest: '_includes/critical.css',
+    width: 1300,
+    height: 800,
+    minify: true
+  });
 });
 
 gulp.task('sass:critical', function() {
