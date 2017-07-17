@@ -65,7 +65,8 @@ gulp.task('uncss', function() {
     .pipe(gulp.dest('_site/css'))
     .pipe(cleanCSS())
     .pipe(uncss({
-      html: ['*.html', '_includes/*.html','_layouts/*.html']
+      html: ['*.html', '_includes/*.html','_layouts/*.html'],
+      ignore: [/\.active/]
     }))
     .pipe(browserSync.reload({stream:true}))
     .pipe(gulp.dest('css'));
