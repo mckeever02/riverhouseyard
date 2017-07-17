@@ -66,7 +66,7 @@ gulp.task('uncss', function() {
     .pipe(cleanCSS())
     .pipe(uncss({
       html: ['*.html', '_includes/*.html','_layouts/*.html'],
-      ignore: [/\.active/]
+      ignore: [/\.active/, /\.nav-link.active/, /\.nav-link/]
     }))
     .pipe(browserSync.reload({stream:true}))
     .pipe(gulp.dest('css'));
