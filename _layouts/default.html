@@ -134,15 +134,15 @@
       {{ content }}
 
     <footer>
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script data-cfasync="true" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
       {% if page.map == true %}
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6taXWltyfEJ0lHzUV0uEqNd-n5yAmyeI&callback=initMap" async defer></script>
         {%include map-js.html%}
       {%endif%}
       {% if page.carousel == true %}
-        <script async src="/js/dist/carousel.js"></script>
+        <script data-cfasync="true" async src="/js/dist/carousel.js"></script>
       {%endif%}
-      <script async src="/js/dist/scripts.min.js"></script>
+      <script data-cfasync="true" async src="/js/dist/scripts.min.js"></script>
 
 
 
