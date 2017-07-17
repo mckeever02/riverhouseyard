@@ -1,37 +1,38 @@
 ---
 layout: default
-title: River House - Downloads & Project Team
+title: River House Belfast - Brochures & Project Team
 description: Download Brochures, specification sheets, floor plans and view our project team
 navigation: 'gray'
+published: false
 ---
 
-<div class="intro intro-large vh-100 intro-downloads pt3 pt4-m pt6-l">
+<div class="intro min-vh-100 intro-downloads pt3 pt4-m pt6-l">
 
   {%include navigation.html%}
 
-  <div class="mw5-m mw8-l center ph3 ph0-ns">
+  <div class="mw5-m mw8-l center ph3 ph0-ns pb5">
     <div class="w-100 w5-m w6-l mt5 mt5-ns">
-      <h2 class="ttu f3 f2-l normal gray lh-title fw5">Modern Office Space to Let From 2,000 Sq Ft - 80,000 Sq Ft</h2>
+      <h2 class="ttu f3 f2-l normal gray lh-title heading">Modern Office Space to Let From 2,000 Sq Ft - 80,000 Sq Ft</h2>
       <hr class="b--gray mt4 mt5-ns">
     </div>
   </div>
 </div>
 
-<div class="bg-white pv5 ph3 ph0-ns">
+<div class="bg-white pv5 ph3 ph0-ns nt2">
   <div class="mw9-l center">
-    <h1 class="ttu f3 f2-l gray fw5 mb4">Downloads</h1>
+    <h1 class="ttu f3 f2-l gray heading mb4">Downloads</h1>
     {% for download in site.downloads %}
     <div class="flex flex-column flex-row-ns w-100 items-center-ns bb b--gray pv3">
-      <h3 class="ma0 black ttu fw5 f4-ns mr-auto-ns tc tl-ns">{{download.name}}</h3>
-      <a class="pv3-ns pv2 ph4 lh-solid white mt2 mt0-ns tc fw5 ba b--transparent bg-animate bg-gray hover-bg-black hover-white link ttu f4" href="/downloads/{{download.link}}">Download</a>
+      <h3 class="ma0 black ttu f4-ns mr-auto-ns tc tl-ns">{{download.name}}</h3>
+      <a class="pv3-ns pv2 ph4 lh-solid white mt2 mt0-ns tc ba b--transparent bg-animate bg-gray hover-bg-black hover-white link ttu f4" href="/downloads/{{download.link}}">Download</a>
     </div>
     {% endfor %}
 
     <div class="pv3 pv5-ns">
-      <h2 class="ttu f3 f2-l gray fw5 mb3 mb4-ns">Project Team</h2>
+      <h2 class="ttu f3 f2-l gray heading mb3 mb4-ns">Project Team</h2>
 
       <div class="overflow-auto">
-        <table class="f4-ns w-100 center black fw5 table-fixed" cellspacing="0">>
+        <table class="f4-ns w-100 center black table-fixed" cellspacing="0">>
           <tbody class="lh-copy">
             {% for member in site.team %}
             <tr>

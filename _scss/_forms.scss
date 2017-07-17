@@ -29,7 +29,11 @@
   }
 }
 
-input,textarea, button {
+input,textarea, button, label {
   border: none;
   font-family: $sans-serif;
+}
+
+textarea {
+  min-height: 100px;
 }

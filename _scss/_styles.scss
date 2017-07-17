@@ -13,6 +13,10 @@
 
 */
 
+html {
+  font-family: $sans-serif;
+}
+
 .logo-bg {
   height: 110px;
   background-image: url('../images/logo.svg');
@@ -39,12 +43,13 @@
 .intro-home {
   background-image: url('../images/header-bg.svg');
   background-position: bottom right;
+  background-size: 60%;
 }
 
 .intro-downloads {
   background-image: url('../images/downloads-bg.svg');
   background-position: bottom right;
-  background-size: 40%;
+  background-size: 30%;
 }
 
 .intro-location {
@@ -170,6 +175,13 @@
   margin-right: -4px;
 }
 
+.logo-rotated {
+  display: none;
+  @media (min-width:  1400px) {
+    display: block;
+  }
+}
+
 .arrow {
   width: 35px;
 }
@@ -188,4 +200,17 @@
 
 #picture4 {
   background-image: url('../images/slide4.jpg');
+}
+
+#picture5 {
+  background-image: url('../images/slide5.jpg');
+}
+
+::-moz-selection {
+	background: white;
+  color: $black;
+}
+::selection {
+	background: white;
+  color: $black;
 }

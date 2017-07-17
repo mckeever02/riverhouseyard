@@ -20,15 +20,15 @@ gems:
 # Navigation
 navigation:
   - title: Home
-    url: //riverhousebelfast.co.uk
+    url: /index.html
   - title: Building
     url: /building/
   - title: History
     url: /history/
   - title: Location
     url: /location/
-  - title: Downloads
-    url: /downloads/
+  # - title: Downloads
+  #   url: /downloads/
 
 features:
   - name: Generous double-height in reception area(s)
