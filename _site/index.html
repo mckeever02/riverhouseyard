@@ -131,9 +131,24 @@
     </head>
     <body class="bg-black white sans-serif">
 
-      <div class="intro min-vh-100 intro-home pt3 pt4-m pt5-l">
+      <div class="min-vh-100 bg-white">
+  <div class="absolute intro-building w-100 h-100 z-1"></div>
 
-  <div class="ph5-ns">
+  <div id="frame" class="frame absolute top-0 left-0 w-100 h-100 overflow-hidden nowrap">
+    <div id="slider" class="slider relative">
+      
+      <div class="slide w-100 h-100 dib bg-center cover" id="picture1"></div>
+      <div class="slide w-100 h-100 dib bg-center cover" id="picture2"></div>
+      
+      <div class="slide w-100 h-100 dib bg-center cover" id="picture3"></div>
+      <div class="slide w-100 h-100 dib bg-center cover" id="picture4"></div>
+      <div class="slide w-100 h-100 dib bg-center cover" id="picture5"></div>
+      <div class="slide w-100 h-100 dib bg-center cover" id="picture6"></div>
+    </div>
+  </div><!-- /#frame -->
+
+  <div class="relative z-2 pt3 pt4-m pt6-l">
+    <div class="ph5-ns">
   <nav class="db w-100 dt-l center pv3 ph3-ns">
     <a class="db gray dtc-ns v-mid mid-gray  hover-white link w-100 w-25-ns tc tl-ns mb2 mb0-ns" href="/" title="Home">
       <img src="/images/logo.svg" class="dib logo-md" alt="Riverhouse Belfast">
@@ -169,15 +184,15 @@
 </div>
 
 
-  <div class="ph4 pb5">
-      <div class="ph5-l">
-        <div class="w-100 w5-m w6-l mt5 ml6-ns mt5-ns">
-          <h1 class="ttu f3 f2-l normal gray lh-title heading">Modern Office Space to Let From 2,000 Sq Ft - 80,000 Sq Ft</h1>
-          <hr class="b--gray mt4 mt5-ns">
-        </div>
-      </div>
+    <div class="mt4">
+      <img class="arrow arrow-left rotate-180 pl4 ml4 glow o-50 pointer-hover" class="fr mt-20" src="/images/arrow-right.svg" title="Click to view next image" alt="Click to view next image">
+      <img class="arrow arrow-right absolute right-2 top-50 glow o-50 pointer-hover" src="/images/arrow-right.svg" title="Click to view next image" alt="Click to view next image">
+    </div>
+
   </div>
-</div>
+
+</div><!-- /min-vh-100 -->
+
 
 <div class="flex flex-column flex-row-l flex-wrap-l w-100">
   <div class="w-100 w-50-l grid-item bg-gray ph4 pv5 flex items-center-m items-end-l justify-start">

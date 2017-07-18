@@ -1,0 +1,30 @@
+<div class="min-vh-100 bg-white">
+  <div class="absolute intro-building w-100 h-100 z-1"></div>
+
+  <div id="frame" class="frame absolute top-0 left-0 w-100 h-100 overflow-hidden nowrap">
+    <div id="slider" class="slider relative">
+      {% if page.url contains "/building/" %}
+      <div class="slide w-100 h-100 dib bg-center cover" id="picture2"></div>
+      <div class="slide w-100 h-100 dib bg-center cover" id="picture1"></div>
+      {%else%}
+      <div class="slide w-100 h-100 dib bg-center cover" id="picture1"></div>
+      <div class="slide w-100 h-100 dib bg-center cover" id="picture2"></div>
+      {%endif%}
+      <div class="slide w-100 h-100 dib bg-center cover" id="picture3"></div>
+      <div class="slide w-100 h-100 dib bg-center cover" id="picture4"></div>
+      <div class="slide w-100 h-100 dib bg-center cover" id="picture5"></div>
+      <div class="slide w-100 h-100 dib bg-center cover" id="picture6"></div>
+    </div>
+  </div><!-- /#frame -->
+
+  <div class="relative z-2 pt3 pt4-m pt6-l">
+    {%include navigation.html%}
+
+    <div class="mt4">
+      <img class="arrow arrow-left rotate-180 pl4 ml4 glow o-50 pointer-hover" class="fr mt-20" src="/images/arrow-right.svg" title="Click to view next image" alt="Click to view next image">
+      <img class="arrow arrow-right absolute right-2 top-50 glow o-50 pointer-hover" src="/images/arrow-right.svg" title="Click to view next image" alt="Click to view next image">
+    </div>
+
+  </div>
+
+</div><!-- /min-vh-100 -->
