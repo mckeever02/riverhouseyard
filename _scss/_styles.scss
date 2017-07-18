@@ -76,6 +76,10 @@ html, body {
   background-image: url('../images/duke-of-york-bg.jpg');
 }
 
+.bg-office-interior {
+  background-image: url('../images/office-interior-bg.jpg');
+}
+
 .bg-skyline {
   @media #{$breakpoint-not-small} {
     background-image: url('../images/belfast-skyline-bg.jpg');
