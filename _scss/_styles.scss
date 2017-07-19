@@ -62,7 +62,7 @@ html, body {
 
 .intro-building {
   background-image:
-  linear-gradient(rgba(0, 0, 0, 0.90), rgba(0, 0, 0, 0.0)), url('../images/building-bg.svg');
+  linear-gradient(rgba(0, 0, 0, 0.90), rgba(0, 0, 0, 0.3)), url('../images/building-bg.svg');
   background-position: center, bottom right;
   background-size: cover, 20%;
   background-repeat: no-repeat;
@@ -173,6 +173,10 @@ html, body {
 //   margin: auto;
 // }
 
+.frame {
+  min-height: 810px;
+}
+
 .slider {
   height: 110%;
   transition: 1s;
@@ -190,7 +194,10 @@ html, body {
 }
 
 .arrow {
-  width: 35px;
+  width: 15px;
+  @media #{$breakpoint-not-small} {
+    width: 35px;
+  }
 }
 
 #picture1 {

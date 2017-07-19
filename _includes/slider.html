@@ -1,5 +1,5 @@
-<div class="min-vh-100 bg-white">
-  <div class="absolute intro-building w-100 h-100 z-1"></div>
+<div class="bg-white min-vh-100 overflow-hidden relative">
+  <div class="absolute intro-building w-100 h-100 min-vh-100 z-1"></div>
 
   <div id="frame" class="frame absolute top-0 left-0 w-100 h-100 overflow-hidden nowrap">
     <div id="slider" class="slider relative">
@@ -20,17 +20,17 @@
   <div class="relative z-2 pt3 pt4-m pt6-l">
     {%include navigation.html%}
 
-    <div class="mt4">
-      <img class="arrow arrow-left rotate-180 pl4 ml4 glow o-50 pointer-hover" class="fr mt-20" src="/images/arrow-right.svg" title="Click to view next image" alt="Click to view next image">
-      <img class="arrow arrow-right absolute right-2 top-50 glow o-50 pointer-hover" src="/images/arrow-right.svg" title="Click to view next image" alt="Click to view next image">
+    <div class="absolute w-100 top-50 pv5-ns z-4">
+      <img class="arrow arrow-left rotate-180 ml2 ml3-ns glow o-50 pointer-hover" class="fr mt-20" src="/images/arrow-right.svg" title="Click to view previous image" alt="Click to view previous image">
+      <img class="arrow arrow-right fr glow o-50 mr2 mr3-ns pointer-hover" src="/images/arrow-right.svg" title="Click to view next image" alt="Click to view next image">
     </div>
 
     {% unless page.url contains "/building/" %}
-    <div class="ph4 pb5">
-      <div class="ph5-l">
-        <div class="w-100 w5-m w6-l mt5 ml6-ns mt5-ns">
+    <div class="ph4 pb2">
+      <div class="ph3 ph5-l">
+        <div class="w-100 w-40-m w6-l ml6-ns mt5-ns">
           <h1 class="ttu f3 f2-l normal gray lh-title heading">Modern Office Space to Let From 2,000 Sq Ft - 80,000 Sq Ft</h1>
-          <hr class="b--gray mt4 mt5-ns">
+          <hr class="b--gray mt3 mt5-l">
         </div>
       </div>
     </div>
