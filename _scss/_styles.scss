@@ -232,3 +232,84 @@ html, body {
 	background: white;
   color: $black;
 }
+
+.icon-md {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.logo-sm {
+  max-width: 70px;
+}
+
+.illustration-sun {
+  width: 200px;
+  top: -2em;
+  right:4em;
+  @media (min-width: 1800px ) {
+	  display: block;
+  }
+}
+
+.illustration-cloud {
+  max-width: 250px;
+  bottom: 3rem;
+  left: 0;
+}
+
+.illustration-face {
+  max-width: 300px;
+  bottom: 0;
+  left: 25%;
+}
+
+.illustration-waves {
+  max-width: 250px;
+  bottom: 15%;
+  left: 55%;
+}
+
+.illustration-man {
+  max-width: 150px;
+  bottom: 20%;
+  right: 0;
+}
+
+@keyframes slidedown {
+  from {
+    transform: rotate(-10deg) translateY(-250px);
+  }
+
+  to {
+    transform: rotate(-10deg) translateY(-40px);
+  }
+}
+
+@-webkit-keyframes slidedown {
+  from {
+    transform: rotate(-10deg) translateY(-250px);
+  }
+
+  to {
+    transform: rotate(-10deg) translateY(-40px);
+  }
+}
+
+
+.charity-sticker {
+  max-width: 200px;
+  top: 0;
+  left: 80%;
+  transform: rotate(-10deg) translateY(0);
+  transition: .2s transform ease;
+  &:hover {
+    transform: rotate(0deg) translateY(-20px);
+  }
+  &:active {
+    transform: rotate(-10deg) translateY(-40px);
+  }
+  @media #{$breakpoint-large} {
+    animation: .5s ease slidedown;
+    transform: rotate(-10deg) translateY(-40px);
+  }
+}

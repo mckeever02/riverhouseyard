@@ -27,6 +27,8 @@ navigation:
     url: /history/
   - title: Location
     url: /location/
+  - title: Charity
+    url: /charity/
   # - title: Downloads
   #   url: /downloads/
 
@@ -145,3 +147,12 @@ timeline:
     description: Located directly in front of River House, work commences on Belfast Cycle Network, involving major alterations and cycle way upgrades.
   - date: 2018
     description: The development of River House is completed in Q2, 2018, offering 80,000 sq ft of office and retail space over 13 floors.
+
+
+charity-facebook: https://www.facebook.com/events/1844680348895890/
+
+charity-twitter: https://twitter.com/caudwellkids?lang=en
+
+charity-instagram: https://www.instagram.com/caudwellchildren/
+
+charity-register: https://www.eventbrite.co.uk/e/climb-for-caudwell-children-tickets-36687495286

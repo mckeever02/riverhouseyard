@@ -12,6 +12,13 @@
       url("../fonts/neue-kabel-bold.woff") format("woff");
 }
 
+@font-face{
+    font-family:"Posterama";
+    src:
+      url("../fonts/posterama.woff2") format("woff2"),
+      url("../fonts/posterama.woff") format("woff");
+}
+
 // Converted Variables
 
 
@@ -28,6 +35,8 @@
 $sans-serif: 'Neue Kabel W01 Book', -apple-system, BlinkMacSystemFont, 'avenir next', avenir, 'helvetica neue', helvetica, ubuntu, roboto, noto, 'segoe ui', arial, sans-serif;
 
 $heading-sans-serif: 'Neue Kabel W01 Bold', -apple-system, BlinkMacSystemFont, 'avenir next', avenir, 'helvetica neue', helvetica, ubuntu, roboto, noto, 'segoe ui', arial, sans-serif;
+
+$posterama: 'Posterama', -apple-system, BlinkMacSystemFont, 'avenir next', avenir, 'helvetica neue', helvetica, ubuntu, roboto, noto, 'segoe ui', arial, sans-serif;
 
 
 .sans-serif {
@@ -50,6 +59,10 @@ $heading-sans-serif: 'Neue Kabel W01 Bold', -apple-system, BlinkMacSystemFont, '
 
 .heading {
   font-family: $heading-sans-serif;
+}
+
+.posterama {
+  font-family: $posterama;
 }
 
 
