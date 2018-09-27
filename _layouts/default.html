@@ -1,6 +1,75 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <!-- Google Analytics -->
+        <script>
+          // Google Analytics
+          var gaProperty = 'UA-39366656-16';
+
+          // Disable tracking if the opt-out cookie exists.
+          var disableStr = 'ga-disable-' + gaProperty;
+          if (document.cookie.indexOf(disableStr + '=true') > -1) {
+            window[disableStr] = true;
+            if (document.documentElement) {
+              document.documentElement.className += " disable-ga";
+            }
+          }
+
+          if (navigator.userAgent.indexOf("Speed Insights") == -1) {
+            (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+              (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+              m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+            })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+            ga('create', gaProperty, 'auto');
+            ga('send', 'pageview');
+          }
+
+          // Opt-out function
+          function gaOptout() {
+            document.cookie = disableStr + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/';
+            window[disableStr] = true;
+            if (document.documentElement) {
+              document.documentElement.className += " disable-ga";
+            }
+          }
+                // End Google Analytics
+
+        </script>
+
+        <!-- Global site tag (gtag.js) - AdWords: 787366153 -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=AW-787366153"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag() { dataLayer.push(arguments); }
+          gtag('js', new Date());
+
+          gtag('config', 'AW-787366153');
+        </script>
+
+        <!-- Facebook Pixel Code -->
+        <script>
+          !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+              n.callMethod ?
+              n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+          }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+          fbq('init', '2168024763440380');
+          fbq('track', 'PageView');
+        </script>
+        <noscript>
+          <img height="1" width="1" src="https://www.facebook.com/tr?id=2168024763440380&ev=PageView
+        &noscript=1" />
+        </noscript>
+        <!-- End Facebook Pixel Code -->
+
         <meta charset="utf-8">
         <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -48,41 +117,6 @@
         <meta name="twitter:title" content="{%if page.title%} {{page.title}} {%else%} {{site.name}} {%endif%}" />
         <meta name="twitter:description" content="A new wave of office and retail space in Cathedral Quarter">
         <meta name="twitter:image" content="{{site.website}}{{site.imageurl}}/card-image.png" />
-
-        <script>
-        // Google Analytics
-        var gaProperty = 'UA-39366656-16';
-
-        // Disable tracking if the opt-out cookie exists.
-        var disableStr = 'ga-disable-' + gaProperty;
-        if (document.cookie.indexOf(disableStr + '=true') > -1) {
-          window[disableStr] = true;
-          if (document.documentElement) {
-            document.documentElement.className += " disable-ga";
-          }
-        }
-
-        if (navigator.userAgent.indexOf("Speed Insights") == -1) {
-          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-          })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-          ga('create', gaProperty, 'auto');
-          ga('send', 'pageview');
-        }
-
-        // Opt-out function
-        function gaOptout() {
-          document.cookie = disableStr + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/';
-          window[disableStr] = true;
-          if (document.documentElement) {
-            document.documentElement.className += " disable-ga";
-          }
-        }
-        // End Google Analytics
-
-
-        </script>
 
         <!-- Custom CSS -->
         {% include criticalCSS.html %}

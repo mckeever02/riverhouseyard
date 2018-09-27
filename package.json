@@ -19,6 +19,6 @@
     "gulp-sass": "^2.1.0",
     "gulp-uglify": "^2.1.2",
     "gulp-uncss": "^1.0.6",
-    "gulp-util": "^3.0.8",
+    "gulp-util": "^3.0.8"
   }
 }
