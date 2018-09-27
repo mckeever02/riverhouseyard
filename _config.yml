@@ -12,7 +12,8 @@ imageurl: /images/
 
 permalink: pretty
 
-baseurl: //riverhousebelfast.co.uk
+#baseurl: https://riverhousebelfast.co.uk
+url: https://riverhousebelfast.co.uk
 
 gems:
   - jekyll-sitemap
