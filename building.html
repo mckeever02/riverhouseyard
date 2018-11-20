@@ -1,65 +1,90 @@
 ---
 layout: default
 title: River House Belfast - The Building
-navigation: 'gray'
-carousel: true
+navigation: 'white'
+
+image_slider:
+  - title: Luxury floor space
+    image: luxury-floor-space
+  - title: Luxury floor space
+    image: luxury-floor-space
+  - title: Luxury floor space
+    image: luxury-floor-space
+
+slider_captions:
+  - "Reception Area"
+  - "Reception Area"
+  - "Reception Area"
+  - "Exterior"
+  - "Thirteenth Floor"
+  - "Thirteenth Floor"
+  - "Bathroom Facilities"
+  - "Bathroom Facilities"
+  - "Shower Facilities"
+  - "Panoramic Views"
+  - "Panoramic Views"
+  - "Exterior"
+
 ---
 
-{% include slider.html %}
+<div class="min-vh-100 intro-building pt3 pt4-m pt6-l">
+  {%include navigation.html%}
+</div>
 
 <div class="bg-white">
 
   <div class="pt3 pt5-ns bb b--black ph3 ph0-ns">
     <div class="mw9-l center">
-      <h1 class="ttu f3 f2-l gray heading">Floor Areas</h1>
       <div class="w-100 tc">
-        <img src="/images/riverhouse-floorplans.png" srcset="/images/riverhouse-floorplans.png 1x, /images/riverhouse-floorplans-2x.png 2x" alt="Floorplans of Riverhouse Building">
+        <img class="w-100" src="/images/floor-areas.png" srcset="/images/floor-areas.png 1x, /images/floor-areas@2x.png 2x" alt="Floorplans of Riverhouse Building">
       </div>
     </div>
   </div>
 
   <div class="pv3 pv5-ns ph3 ph0-ns">
     <div class="mw9-l center">
-      <h1 class="ttu f3 f2-l gray heading mb5">Features</h1>
       <div class="flex flex-wrap w-100">
         {% for feature in site.features %}
           <div class="w-100 w-third-ns">
             <div class="cf">
-              <hr class="fl mb2 mb3-ns w-40">
+              <hr class="fl mb2 mb3-ns w-100 w-40-ns bg-gray">
             </div>
-            <p class="lh-title f4-ns black mb3 mb5-ns measure-tight-ns">{{feature.name}}</p>
+            <p class="lh-title f4-ns black mb3 fw6 mb5-ns measure-tight-ns">{{feature.name}}</p>
           </div>
         {% endfor %}
       </div>
     </div>
   </div>
 
-  <div class="min-vh-100 bg-office-interior bg-center cover ph3 ph0-l">
-    <div class="mw9 pv5 center ph3 ph0-ns">
-      <div class="bg-black pa4 pa5-ns w-100 w-70-m w-50-l">
-        <h2 class="ttu f4 f3-ns gray lh-copy heading ma0">River house is the ideal space for any progressive corporate organisation. Boasting superb finishes, excellent bathroom facilities, flexible space planning and an abundance of natural light, there is no other space like this in Belfast.</h2>
-        <div class="cf">
-          <hr class="fl mt4 w-60 b--gray">
-        </div>
-      </div>
-    </div>
-  </div>
-
   <div class="pv3 pv5-ns ph3 ph0-ns">
     <div class="mw9-l center">
-      <h2 class="ttu f3 f2-l normal gray heading">Floor Plans</h2>
+      <h1 class="ttu f2 f1-ns normal dark-gray heading">Floor Plans</h1>
       <div class="cf">
-        <hr class="fl mb3 w-30-m w-10-l">
+        <hr class="fl mb3 w-30 bg-dark-gray">
       </div>
 
-      <img class="w-100 mt3" src="/images/floorplan-outline.png" srcset="/images/floorplan-outline.png 1x, /images/floorplan-outline-2x.png 2x" alt="Outline of floorplan">
+      <section class="pb5">
+        <h2 class="ttu heading f3 f2-ns dark-gray mb2">Office</h2>
+        <img class="w-100" src="/images/office-floor-plan.svg" alt="Riverhouse Offices floor Plan">
+      </section>
+
+      <section>
+        <h2 class="ttu heading f3 f2-ns dark-gray mb2">Retail</h2>
+        <img class="w-100" src="/images/retail-floor-plan.svg" alt="Riverhouse Retail floor Plan">
+        <p class="fw6 f3 gray">Planning granted for restaurant use. It’s all happening here.</p>
+      </section>
+
 
     </div>
   </div>
 
   <div class="pv3 pv5-ns ph3 ph0-ns">
     <div class="mw9-l center">
-      <h2 class="ttu f3 f2-l gray heading mb0">River House — Proposed Floor Areas</h2>
+      <h2 class="ttu f2 f1-ns dark-gray heading mb0">Proposed Floor Areas</h2>
+      <div class="cf">
+      <hr class="fl mb2 mb3-ns w-100 w-40-ns bg-gray">
+      </div>
+
       <h3 class="gray f4-ns ma0 mb2">(IPMS 3 / Net Internal)</h3>
 
       <div class="overflow-auto">
@@ -109,41 +134,57 @@ carousel: true
             </tr>
           </tfoot>
         </table>
+        <hr class="w-100 bg-dark-gray">
+
       </div>
     </div>
   </div>
 
   <div class="pt3 pt5-ns">
     <div class="mw9-l center ph3 ph0-ns">
-      <h2 class="ttu f3 f2-l normal gray heading">Gallery</h2>
+      <h2 class="ttu f2 f1-ns normal dark-gray heading">Gallery</h2>
     </div>
-    <div class="flex flex-wrap w-100">
-      <div style="background-image: url('/images/reception-area1.jpg')" class="relative w-100 w-50-l grid-item cover bg-center flex items-end justify-start">
-        <div class="w-100 absolute bottom-0 tc bg-black-70">
-          <h3 class="ttu f3 f2-l gray heading">Reception Area</h3>
-        </div>
+
+    <div class="slider-for center tc bg-black relative">
+      {% for i in (1..12) %}
+            {% assign index = forloop.index %}
+      <div>
+        <img class="db tc center" src="/images/building/building-gallery-{{i}}.jpg" alt="Gallery image {{i}}">
+
+  
+        {% if index == 1 or index == 2 or index == 3 %}
+          <p class="white ttu f3">Reception Area</p>
+        {% elsif index == 4 %}
+          <p class="white ttu f3">Exterior</p>
+        {% elsif index == 5 or index == 6 %}
+          <p class="white ttu f3">Thirteenth Floor</p>
+        {% elsif index == 7 or index == 8 %}
+          <p class="white ttu f3">Bathroom Facilities</p>
+        {% elsif index == 9 %}
+          <p class="white ttu f3">Shower Facilities</p>
+        {% elsif index == 10 or index == 11 %}
+          <p class="white ttu f3">Panoramic Views</p>
+        {% elsif index == 12 %}
+          <p class="white ttu f3">Exterior</p>
+        {%endif%}
+        
       </div>
-      <div style="background-image: url('/images/roof-terrace.jpg')" class="relative w-100 w-50-l grid-item cover bg-center flex items-end justify-start">
-        <div class="w-100 absolute bottom-0 tc bg-black-70">
-          <h3 class="ttu f3 f2-l gray heading">Roof Terrace</h3>
-        </div>
+      {%endfor%}
+
+      
+    </div>
+    
+    <div class="slider-nav mv5 flex justify-center items-center">
+      {% for i in (01..12) %}
+      <div class="flex items-center justify-center">
+        <img src="/images/building/building-gallery-sm-{{i}}.jpg" alt="Gallery image {{i}}">
       </div>
-      <div style="background-image: url('/images/riverhouse-exterior.jpg')" class="relative w-100 w-50-l grid-item cover bg-center flex items-end justify-start">
-        <div class="w-100 absolute bottom-0 tc bg-black-70">
-          <h3 class="ttu f3 f2-l gray heading">Ground Exterior</h3>
-        </div>
-      </div>
-      <div style="background-image: url('/images/reception-area2.jpg')" class="relative w-100 w-50-l grid-item cover bg-center flex items-end justify-start">
-        <div class="w-100 absolute bottom-0 tc bg-black-70">
-          <h3 class="ttu f3 f2-l gray heading">Reception Area</h3>
-        </div>
-      </div>
-    </div><!-- /flex -->
+      {%endfor%}
+    </div>
+
+    
   </div>
 
-<div class="bg-black">
   {%include contact.html%}
-</div>
-
 
 </div><!-- /bg-white -->

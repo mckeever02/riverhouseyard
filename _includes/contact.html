@@ -1,29 +1,31 @@
-<div class="ph3 pt6-ns bottom cf">
+<div class="ph3 pt5 pt6-ns {% unless page.url contains 'contact' %} bottom {% endunless %} cf">
   <div class="db">
-    <img class="rotate-90 logo-sm logo-rotated" src="{{site.url}}/images/logo.svg" alt="Riverhouse logo">
     <div class="mw9 center flex flex-column flex-row-ns">
       <div class="w-100 w-50-m w-40-l pr4-ns">
-        <h2 class="ttu f2 normal mb2 mb4-ns heading">Get in touch</h2>
+        <h2 class="ttu f2 f1-l normal ma0 heading">Contact</h2>
+        <div class="cf">
+          <hr class="fl mv2 w-100 w-80-ns bg-gray">
+        </div>
         <form id="contact-form" action="https://formspree.io/{{site.email}}" method="POST">
           <fieldset class="ba b--transparent ph0 mh0">
             <legend class="ph0 mh0 fw6 clip">Contact us</legend>
             <div class="mt4">
-              <label class="db fw4 lh-copy f5 ttu gray" for="name">Name*
+              <label class="db fw6 lh-copy f5 ttu gray" for="name">Name*
               <input class="db w-90 input-transition pv2 r0 input-reset bb b--gray bg-transparent focus-b focus-b--white outline-0 white f4" required type="text" name="name"  id="name">
               </label>
             </div>
             <div class="mt4">
-              <label class="db fw4 lh-copy f5 ttu gray" for="email">Email*
+              <label class="db fw6 lh-copy f5 ttu gray" for="email">Email*
               <input class="db w-90 input-transition pv2 input-reset bb b--gray bg-transparent focus-b focus-b--white outline-0 white f4" required type="email" name="email" id="email">
               </label>
             </div>
             <div class="mt4">
-              <label class="db fw4 lh-copy f5 ttu gray" for="email">Tel
+              <label class="db fw6 lh-copy f5 ttu gray" for="email">Tel
               <input class="db w-90 input-transition pv2 input-reset bb b--gray bg-transparent focus-b focus-b--white outline-0 white f4" type="tel" name="tel"  id="tel">
               </label>
             </div>
             <div class="mt4">
-              <label class="db fw4 lh-copy f5 ttu gray" for="message">Query*
+              <label class="db fw6 lh-copy f5 ttu gray" for="message">Query*
               <textarea class="db w-90 input-transition pv2 input-reset bb b--gray bg-transparent focus-b focus-b--white outline-0 white f4" required name="message" id="message"></textarea>
               </label>
             </div>
@@ -32,7 +34,7 @@
             <input type="hidden" name="_cc" value="david.wright@cbre.com,rory.mcconnell@mcconnellproperty.com,luke.mcclelland@cbre.com,chelsea@riverhousebelfast.co.uk" />
           </fieldset>
           <div class="mt4">
-            <button type="submit" class="button-reset pv3 lh-solid white ba b--transparent w-100 submit bg-animate bg-gray hover-bg-white hover-black link ttu f4">Submit</button>
+            <button type="submit" class="button-reset pv3 lh-solid white ba b--transparent w-100 submit bg-animate bg-blue hover-bg-dark-blue link ttu f4">Submit</button>
           </div>
         </form>
 

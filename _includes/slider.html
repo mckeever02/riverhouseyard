@@ -1,19 +1,21 @@
-<div class="bg-white min-vh-100 overflow-hidden relative">
-  <div class="absolute intro-building w-100 h-100 min-vh-100 z-1"></div>
+<div class="bg-white min-vh-100 overflow-hidden relative bg-slider">
+  <div class="absolute {% if page.url contains '/clockwise/' %}intro-clockwise{%else%}intro-home{%endif%} w-100 h-100 min-vh-100 z-1"></div>
 
   <div id="frame" class="frame absolute top-0 left-0 w-100 h-100 overflow-hidden nowrap">
     <div id="slider" class="slider relative">
-      {% if page.url contains "/building/" %}
-      <div class="slide w-100 h-100 dib bg-center cover" id="picture2"></div>
-      <div class="slide w-100 h-100 dib bg-center cover" id="picture1"></div>
+      {% if page.url contains "/clockwise/" %}
+      <div class="slide w-100 h-100 dib bg-center cover" id="clockwise-picture1"></div>
+      <div class="slide w-100 h-100 dib bg-center cover" id="clockwise-picture2"></div>
+      <div class="slide w-100 h-100 dib bg-center cover" id="clockwise-picture3"></div>
+      <div class="slide w-100 h-100 dib bg-center cover" id="clockwise-picture4"></div>
       {%else%}
       <div class="slide w-100 h-100 dib bg-center cover" id="picture1"></div>
       <div class="slide w-100 h-100 dib bg-center cover" id="picture2"></div>
-      {%endif%}
       <div class="slide w-100 h-100 dib bg-center cover" id="picture3"></div>
       <div class="slide w-100 h-100 dib bg-center cover" id="picture4"></div>
       <div class="slide w-100 h-100 dib bg-center cover" id="picture5"></div>
       <div class="slide w-100 h-100 dib bg-center cover" id="picture6"></div>
+      {%endif%}
     </div>
   </div><!-- /#frame -->
 
@@ -25,12 +27,13 @@
       <img class="arrow arrow-right fr glow o-50 mr2 mr3-ns pointer-hover" src="/images/arrow-right.svg" title="Click to view next image" alt="Click to view next image">
     </div>
 
-    {% unless page.url contains "/building/" %}
+    {% unless page.url contains "/clockwise/" %}
     <div class="ph4 pb2">
       <div class="ph3 ph5-l">
-        <div class="w-100 w-40-m w-auto-l ml6-ns dib mt5-ns mt0-l">
-          <h1 class="ttu f3 f2-l normal gray lh-title heading">Launching Summer 2018<br> 80,000 sq ft<br> Grade A Office<br> Cathedral quarter, Belfast</h1>
-          <hr class="b--gray mt3 mt5-l">
+        <div class="w-100 hero-text ml6-ns dib mt5-ns mt4-l">
+          <h1 class="ttu f2 f1-l fw6 white">Cathedral<br> Quarter<br> Belfast</h1>
+          <hr class="bg-white my-2">
+          <h2 class="f3 f2-l ttu fw6 white">GRADE A OFFICE SPACE 800 SQ FT - 80,000 SQ FT</h2>
         </div>
       </div>
     </div>

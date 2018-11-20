@@ -185,8 +185,7 @@
 
 
     </head>
-    <body class="bg-black white sans-serif">
-    
+    <body class="bg-white dark-gray sans-serif">
 
       <div class="bg-white pt3 pv4-m pv6-l bg-history bg-bottom bg-right">
 
@@ -194,8 +193,7 @@
   <nav class="db w-100 dt-l center pv3 ph3-ns">
     <a class="db gray dtc-ns v-mid mid-gray  hover-white link w-100 w-25-ns tc tl-ns mb2 mb0-ns" href="/" title="Home">
       <img src="/images/logo.svg" class="dib logo-md" alt="Riverhouse Belfast">
-
-      
+      <!--  -->
     </a>
     <div class="db dtc-ns mt4 mt0-ns v-top w-100 w-75-ns tc tr-ns">
       
@@ -221,7 +219,12 @@
       
         
         
-        <a class=" link nav-link ttu  black hover-gray  pb2 pb0-ns f5-m f4 dib pr3 pr4-l" href="/charity/" title="Charity">Charity</a>
+        <a class=" link nav-link ttu  black hover-gray  pb2 pb0-ns f5-m f4 dib pr3 pr4-l" href="/clockwise/" title="Clockwise">Clockwise</a>
+        </a>
+      
+        
+        
+        <a class=" link nav-link ttu  black hover-gray  pb2 pb0-ns f5-m f4 dib pr3 pr4-l" href="/contact/" title="Contact us">Contact us</a>
         </a>
       
     </div>
@@ -348,6 +351,27 @@
       
       
       <script async src="/js/dist/scripts.min.js"></script>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
+
+      <script>
+          $('.slider-for').slick({
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              arrows: false,
+              asNavFor: '.slider-nav'
+            });
+
+            $('.slider-nav').slick({
+              slidesToShow: 4,
+              slidesToScroll: 4,
+              asNavFor: '.slider-for',
+              dots: false,
+              arrows: false,
+              centerMode: true,
+              focusOnSelect: true
+            });
+      </script>
 
 
 

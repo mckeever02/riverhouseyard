@@ -2,10 +2,9 @@
   <nav class="db w-100 dt-l center pv3 ph3-ns">
     <a class="db gray dtc-ns v-mid mid-gray {%if page.navigation == 'white'%}dim{%endif%} hover-white link w-100 w-25-ns tc tl-ns mb2 mb0-ns" href="/" title="Home">
       <img {%if page.navigation == 'white'%}src="/images/logo-white.svg"{%else%}src="/images/logo.svg"{%endif%} class="dib logo-md" alt="Riverhouse Belfast">
-
-      {% if page.address == true %}
+      <!-- {% if page.address == true %}
       <p class="pl3-ns f6-m f4-ns ml4-ns">48 High Street, Belfast</p>
-      {% endif %}
+      {% endif %} -->
     </a>
     <div class="db dtc-ns mt4 mt0-ns v-top w-100 w-75-ns tc tr-ns">
       {% for item in site.navigation %}
@@ -13,7 +12,7 @@
         {% if page.url contains item.url %}
             {% assign class = 'active' %}
         {% endif %}
-        <a class="{{class}} link nav-link ttu {% if page.navigation == 'white' %} white hover-gray {% elsif page.navigation == 'black' %} black hover-gray {% elsif page.navigation == 'gray' %} gray hover-white {%endif%} pb2 pb0-ns f5-m f4 dib pr3 pr4-l" href="{{ item.url }}" title="{{ item.title }}">{{ item.title }}</a>
+        <a class="{{class}} link nav-link ttu {% if page.navigation == 'white' %} white {% elsif page.navigation == 'black' %} black hover-gray {% elsif page.navigation == 'gray' %} gray hover-white {%endif%} pb2 pb0-ns f5-m f4 dib pr3 pr4-l" href="{{ item.url }}" title="{{ item.title }}">{{ item.title }}</a>
         </a>
       {% endfor %}
     </div>

@@ -28,8 +28,10 @@ navigation:
     url: /history/
   - title: Location
     url: /location/
-  - title: Charity
-    url: /charity/
+  - title: Clockwise
+    url: /clockwise/
+  - title: Contact us
+    url: /contact/
   # - title: Downloads
   #   url: /downloads/
 
@@ -39,38 +41,39 @@ features:
   - name: Raised access flooring
   - name: Car park
   - name: 6,000 sq ft. floorplates
+  - name: Onsite cafe
   - name: Generous bike storage space
   - name: Multiple high-speed data networks
   - name: Excellent natural light
 
 floorspace:
-  - floor: Ground Floor Unit 1
+  - floor: Ground Floor Unit 1/2
     sqm: 218
     sqf: 2,347
-  - floor: Ground Floor Unit 2
-    sqm: 215
-    sqf: 2,314
   - floor: Ground Floor Unit 3
+    sqm: 106
+    sqf: 1,140
+  - floor: Ground Floor Unit 4 - LEASED
+    sqm: 
+    sqf: 
+  - floor: Ground Floor Unit 5
     sqm: 120
     sqf: 1,292
 
 offices:
-  - floor: 1st Floor Suite 1
-    sqm: 218
-    sqf: 2,347
-  - floor: 1st Floor Suite 2
-    sqm: 369
-    sqf: 3,972
-  - floor: 2nd Floor
+  - floor: 1st Floor - Clockwise Cafe & Reception	 
+    sqm: 
+    sqf: 
+  - floor: 2nd Floor - Clockwise Roof Terrace
+    sqm: 
+    sqf: 
+  - floor: 3rd Floor - Clockwise Serviced Office
     sqm: 550
     sqf: 6,000
-  - floor: 3rd Floor
+  - floor: 4th Floor - Clockwise Serviced Offic
     sqm: 550
     sqf: 6,000
-  - floor: 4th Floor
-    sqm: 550
-    sqf: 6,000
-  - floor: 5th Floor
+  - floor: 5th Floor - Clockwise Serviced Office
     sqm: 550
     sqf: 6,000
   - floor: 6th Floor
@@ -94,12 +97,12 @@ offices:
   - floor: 12th Floor
     sqm: 550
     sqf: 6,000
-  - floor: 13th Floor
-    sqm: 550
-    sqf: 6,000
-  - floor: 14th Floor
-    sqm: 161
-    sqf: 1,733
+  - floor: 13th Floor - LEASED
+    sqm: 
+    sqf:
+  - floor: 14th Floor - LEASED
+    sqm: 
+    sqf:
 
 downloads:
   - name: River House Brochure

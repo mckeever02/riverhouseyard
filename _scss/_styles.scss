@@ -13,6 +13,13 @@
 
 */
 
+hr {
+  height: 1px;
+  border: none;
+  width: 100%;
+  background-color: inherit;
+}
+
 html {
   font-family: $sans-serif;
 }
@@ -40,11 +47,6 @@ html, body {
   }
 }
 
-.intro-home {
-  background-image: url('../images/header-bg.svg');
-  background-position: bottom right;
-  background-size: 60%;
-}
 
 .intro-downloads {
   background-image: url('../images/downloads-bg.svg');
@@ -54,19 +56,59 @@ html, body {
 
 .intro-location {
   background-image:
-  linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.0)), url('../images/location-bg.svg'), url('../images/location-bg.jpg');
+  linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.0)), url('../images/location-bg.png'), url('../images/location-bg.jpg');
   background-repeat: no-repeat;
-  background-size: cover, 20%, cover;
+  background-size: cover, 100%, cover;
   background-position: center, bottom left, center;
+  @media #{$breakpoint-not-small} {
+    background-size: cover, 35%, cover;
+  }
+}
+
+.intro-contact {
+  background-image:
+  linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.0)), url('../images/contact-bg.png'), url('../images/contact-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover, 100%, cover;
+  background-position: center, bottom left, center;
+  @media #{$breakpoint-not-small} {
+    background-size: cover, 35%, cover;
+  }
+}
+
+.intro-home {
+  background-image: url('../images/home-bg.png'), 
+  linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
+  background-position: bottom left, center;
+  background-size: 100%, cover;
+  background-repeat: no-repeat;
+  @media #{$breakpoint-not-small} {
+    background-size: 40%, cover;
+  }
+}
+
+.intro-clockwise {
+  background-image: url('../images/clockwise-bg.png'), 
+  linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
+  background-position: bottom right, center;
+  background-size: 100%, cover;
+  background-repeat: no-repeat;
+  @media #{$breakpoint-not-small} {
+    background-size: 40%, cover;
+  }
 }
 
 .intro-building {
-  background-image:
-  linear-gradient(rgba(0, 0, 0, 0.90), rgba(0, 0, 0, 0.3)), url('../images/building-bg.svg');
-  background-position: center, bottom right;
-  background-size: cover, 20%;
+  background-image: url('../images/building-bg.png'), 
+  linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.3)), url('../images/building-bg.jpg');;
+  background-position: bottom right, center;
+  background-size: 100%, cover, cover;
   background-repeat: no-repeat;
+  @media #{$breakpoint-not-small} {
+    background-size: 40%, cover, cover;
+  }
 }
+
 
 .bg-culture {
   background-image: url('../images/culture-bg.jpg');
@@ -78,6 +120,10 @@ html, body {
 
 .bg-office-interior {
   background-image: url('../images/office-interior-bg.jpg');
+}
+
+.bg-slider {
+    height: 1000px;
 }
 
 .bg-skyline {
@@ -107,19 +153,12 @@ html, body {
 }
 
 .bottom {
-  background-image: url('../images/bottom-bg.svg');
-  background-position: bottom right;
-  background-size: contain;
-  padding-bottom: 20rem;
+  background-image: url('../images/bottom-bg.png');
+  background-position: bottom;
+  background-size: 100%;
+  padding-bottom: 10rem;
   @media #{$breakpoint-not-small} {
-    padding-bottom: 35rem;
-    background-size: 80%;
-  }
-  @media #{$breakpoint-large} {
-    padding-bottom: 40rem;
-  }
-  @media #{$breakpoint-xlarge} {
-    padding-bottom: 60rem;
+    padding-bottom: 30rem;
   }
 }
 
@@ -144,8 +183,20 @@ html, body {
     min-height: 512px;
   }
   @media #{$breakpoint-large} {
-    min-height: 700px;
+    min-height: 600px;
   }
+}
+
+.grid-item--office-space {
+  background-image: url('../images/grade-a-office-space.jpg');
+}
+
+.grid-item--sea-faring {
+  background-image: url('../images/sea-faring-past.jpg');
+}
+
+.grid-item--text {
+  max-width: 380px;
 }
 
 .grid-building {
@@ -160,8 +211,8 @@ html, body {
   background-image: url(../images/history.jpg);
 }
 
-.icon-md {
-  max-width: 90px;
+.icon-work-play {
+  max-width: 70px;
 }
 
 .icon-lg {
@@ -222,6 +273,22 @@ html, body {
 
 #picture6 {
   background-image: url('../images/slide5.jpg');
+}
+
+#clockwise-picture1 {
+  background-image: url('../images/clockwise-slide0.jpg');
+}
+
+#clockwise-picture2 {
+  background-image: url('../images/clockwise-slide1.jpg');
+}
+
+#clockwise-picture3 {
+  background-image: url('../images/clockwise-slide2.jpg');
+}
+
+#clockwise-picture4 {
+  background-image: url('../images/clockwise-slide3.jpg');
 }
 
 ::-moz-selection {
@@ -311,4 +378,20 @@ html, body {
     animation: .5s ease slidedown;
     transform: rotate(-10deg) translateY(-20px);
   }
+}
+
+.hero-text {
+  max-width: 425px;
+}
+
+.feature-box {
+  max-width: 600px;
+}
+
+.works-your-way {
+  max-width: 320px;
+}
+
+.clockwise-logo {
+  max-width: 460px;
 }
