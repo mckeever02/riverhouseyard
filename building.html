@@ -58,20 +58,20 @@ slider_captions:
 
   <div class="pv3 pv5-ns ph3 ph0-ns">
     <div class="mw9-l center">
-      <h1 class="ttu f2 f1-ns normal dark-gray heading">Floor Plans</h1>
+      <h1 class="ttu f2 f1-ns dark-gray">Floor Plans</h1>
       <div class="cf">
         <hr class="fl mb3 w-30 bg-dark-gray">
       </div>
 
       <section class="pb5">
-        <h2 class="ttu heading f3 f2-ns dark-gray mb2">Office</h2>
+        <h2 class="ttu f3 f2-ns dark-gray mb2">Office</h2>
         <img class="w-100" src="/images/office-floor-plan.svg" alt="Riverhouse Offices floor Plan">
       </section>
 
       <section>
-        <h2 class="ttu heading f3 f2-ns dark-gray mb2">Retail</h2>
+        <h2 class="ttu f3 f2-ns dark-gray mb2">Retail</h2>
         <img class="w-100" src="/images/retail-floor-plan.svg" alt="Riverhouse Retail floor Plan">
-        <p class="fw6 f3 gray">Planning granted for restaurant use. It’s all happening here.</p>
+        <p class="fw6 text-lg gray">Planning granted for restaurant use. It’s all happening here.</p>
       </section>
 
 
@@ -80,7 +80,7 @@ slider_captions:
 
   <div class="pv3 pv5-ns ph3 ph0-ns">
     <div class="mw9-l center">
-      <h2 class="ttu f2 f1-ns dark-gray heading mb0">Proposed Floor Areas</h2>
+      <h2 class="ttu f2 f1-ns dark-gray mb0">Proposed Floor Areas</h2>
       <div class="cf">
       <hr class="fl mb2 mb3-ns w-100 w-40-ns bg-gray">
       </div>
@@ -128,9 +128,8 @@ slider_captions:
           </tbody>
           <tfoot>
             <tr>
-              <td class="pv4 pr3 heading">Total Space</td>
-              <td class="pv4 pr3 heading">7,348</td>
-              <td class="pv4 pr3 heading">80,052</td>
+              <td class="pv4 pr3">7,348</td>
+              <td class="pv4 pr3">80,052</td>
             </tr>
           </tfoot>
         </table>
@@ -142,32 +141,34 @@ slider_captions:
 
   <div class="pt3 pt5-ns">
     <div class="mw9-l center ph3 ph0-ns">
-      <h2 class="ttu f2 f1-ns normal dark-gray heading">Gallery</h2>
+      <h2 class="ttu f2 f1-ns dark-gray">Gallery</h2>
     </div>
 
     <div class="slider-for center tc bg-black relative">
       {% for i in (1..12) %}
             {% assign index = forloop.index %}
       <div>
-        <img class="db tc center" src="/images/building/building-gallery-{{i}}.jpg" alt="Gallery image {{i}}">
+        <div class="relative">
+          <img class="db tc center" src="/images/building/building-gallery-{{i}}.jpg" alt="Gallery image {{i}}">
+          <div class="bg-black-80 absolute w-100 left-0 bottom-0 z3 pa1 pa4-ns">
+            {% if index == 1 or index == 2 or index == 3 %}
+            <p class="white ttu f3-ns">Reception Area</p>
+            {% elsif index == 4 %}
+            <p class="white ttu f3-ns">Exterior</p>
+            {% elsif index == 5 or index == 6 %}
+            <p class="white ttu f3-ns">Thirteenth Floor</p>
+            {% elsif index == 7 or index == 8 %}
+            <p class="white ttu f3-ns">Bathroom Facilities</p>
+            {% elsif index == 9 %}
+            <p class="white ttu f3-ns">Shower Facilities</p>
+            {% elsif index == 10 or index == 11 %}
+            <p class="white ttu f3-ns">Panoramic Views</p>
+            {% elsif index == 12 %}
+            <p class="white ttu f3-ns">Exterior</p>
+            {%endif%}
+          </div>
+        </div>
 
-  
-        {% if index == 1 or index == 2 or index == 3 %}
-          <p class="white ttu f3">Reception Area</p>
-        {% elsif index == 4 %}
-          <p class="white ttu f3">Exterior</p>
-        {% elsif index == 5 or index == 6 %}
-          <p class="white ttu f3">Thirteenth Floor</p>
-        {% elsif index == 7 or index == 8 %}
-          <p class="white ttu f3">Bathroom Facilities</p>
-        {% elsif index == 9 %}
-          <p class="white ttu f3">Shower Facilities</p>
-        {% elsif index == 10 or index == 11 %}
-          <p class="white ttu f3">Panoramic Views</p>
-        {% elsif index == 12 %}
-          <p class="white ttu f3">Exterior</p>
-        {%endif%}
-        
       </div>
       {%endfor%}
 

@@ -326,7 +326,7 @@
     <div class="flex flex-column flex-row-ns mb5-ns">
       <div class="w-100 w-50-ns bt-ns b--gray mr5-ns pv4 order-1 order-0-ns">
         <h2 class="f1 fw4 gray ma0 mb3">2018</h2>
-        <p class="black f4-ns lh-copy">The development of River House is completed in Q2, 2018, offering 80,000 sq ft of office and retail space over 13 floors.</p>
+        <p class="black f4-ns lh-copy">The development of River House is completed in Q4, offering 80,000 sq ft of office and retail space over 13 floors.</p>
       </div>
       <div class="w-100 w-50-ns bt b--gray bn-ns pt4 pt0-ns order-0 order-1-ns">
         <img class="lazyload bg-gray" data-src="/images/2018.jpg" alt="2018">
@@ -361,7 +361,7 @@
           $('.slider-for').slick({
               slidesToShow: 1,
               slidesToScroll: 1,
-              arrows: false,
+              arrows: true,
               asNavFor: '.slider-nav'
             });
 
@@ -370,13 +370,20 @@
               slidesToScroll: 4,
               asNavFor: '.slider-for',
               dots: false,
-              arrows: false,
+              arrows: true,
               centerMode: true,
-              focusOnSelect: true
+              focusOnSelect: true,
+              responsive: [
+                {
+                  breakpoint: 500,
+                  settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                  }
+                }
+              ]
             });
       </script>
-
-
 
     </footer>
 

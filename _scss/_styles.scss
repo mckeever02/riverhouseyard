@@ -93,14 +93,17 @@ html, body {
   background-position: bottom right, center;
   background-size: 100%, cover;
   background-repeat: no-repeat;
-  @media #{$breakpoint-not-small} {
-    background-size: 40%, cover;
+  @media #{$breakpoint-medium} {
+    background-size: 70%, cover;
+  }
+  @media #{$breakpoint-large} {
+    background-size: 45%, cover;
   }
 }
 
 .intro-building {
   background-image: url('../images/building-bg.png'), 
-  linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.3)), url('../images/building-bg.jpg');;
+  linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)), url('../images/building-bg.jpg');;
   background-position: bottom right, center;
   background-size: 100%, cover, cover;
   background-repeat: no-repeat;
@@ -342,6 +345,10 @@ html, body {
   right: 0;
 }
 
+.text-lg {
+  font-size: 1.25rem;
+}
+
 // @keyframes slidedown {
 //   from {
 //     transform: rotate(-10deg) translateY(-250px);
@@ -394,4 +401,12 @@ html, body {
 
 .clockwise-logo {
   max-width: 460px;
+}
+
+.clockwise-logo-sm {
+  max-width: 300px;
+}
+
+.partner-logo {
+  max-height: 55px;
 }

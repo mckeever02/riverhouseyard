@@ -240,7 +240,7 @@
 
 <div class="min-vh-100 bg-culture bg-center cover flex items-center items-end-ns justify-center justify-end-ns pa3 pa5-ns">
   <div class="bg-near-white pa4 pa5-ns w-100 feature-box" style="background-color: #FCF5FD;">
-    <h2 class="ttu f2 f1-l dark-gray lh-title heading ma0">Hey Neighbour!</h2>
+    <h2 class="ttu f2 f1-l dark-gray lh-title ma0">Hey Neighbour!</h2>
     <div class="cf">
       <hr class="fl mv2 w-100 bg-gray">
     </div>
@@ -250,7 +250,7 @@
 
 <section class="pv5">
   <div class="mw9 center ph3 ph0-ns">
-      <h2 class="ttu f2 f1-l dark-gray lh-title heading ma0">Location<br> is key</h2>
+      <h2 class="ttu f2 f1-l dark-gray lh-title ma0">Location<br> is key</h2>
       <div class="cf">
         <hr class="fl mv2 w-100 w-30-ns bg-gray">
       </div>
@@ -291,7 +291,7 @@
     
     <div class="flex w-100 justify-center">
       <div class="mw6">
-        <h2 class="ttu f2 f1-l dark-gray lh-title heading ma0">Work &amp; Play</h2>
+        <h2 class="ttu f2 f1-l dark-gray lh-title ma0">Work &amp; Play</h2>
         <hr class="bg-dark-gray mv3">
         <h2 class="dark-gray mt0 ttu f4 f3-ns">In Cathedral Quarter Belfast</h2>
       </div>
@@ -308,7 +308,7 @@
       </div>
       <div class="db pa2 pa0-l pr4-l w-50 w-25-l">
         <img class="icon-work-play mb3" src="/images/vic-square-icon.svg" alt="Victoria Square">
-        <p class="dark-gray f4-ns ph3-ns lh-copy fw6">3 minute walk to Victoria Square shopping and leisure</p>
+        <p class="dark-gray f4-ns ph3-ns lh-copy fw6">3 minute walk to Victoria Square shopping complex</p>
       </div>
       <div class="db pa2 pa0-l w-50 w-25-l">
         <img class="icon-work-play mb3" src="/images/barbell.svg" alt="Dumbbell">
@@ -324,10 +324,8 @@
   <div class="db">
     <div class="mw9 center flex flex-column flex-row-ns">
       <div class="w-100 w-50-m w-40-l pr4-ns">
-        <h2 class="ttu f2 f1-l normal ma0 heading">Contact</h2>
-        <div class="cf">
-          <hr class="fl mv2 w-100 w-80-ns bg-gray">
-        </div>
+        <h2 class="ttu f2 f1-l ma0">Contact</h2>
+        
         <form id="contact-form" action="https://formspree.io/rpittaway@castleforgepartners.com" method="POST">
           <fieldset class="ba b--transparent ph0 mh0">
             <legend class="ph0 mh0 fw6 clip">Contact us</legend>
@@ -356,7 +354,7 @@
             <input type="hidden" name="_cc" value="david.wright@cbre.com,rory.mcconnell@mcconnellproperty.com,luke.mcclelland@cbre.com,chelsea@riverhousebelfast.co.uk" />
           </fieldset>
           <div class="mt4">
-            <button type="submit" class="button-reset pv3 lh-solid white ba b--transparent w-100 submit bg-animate bg-blue hover-bg-dark-blue link ttu f4">Submit</button>
+            <button type="submit" class="button-reset pv3 lh-solid white ba b--transparent w-100 w-90-ns submit bg-animate bg-blue hover-bg-dark-blue link ttu f4">Submit</button>
           </div>
         </form>
 
@@ -364,21 +362,21 @@
       <div class="w-100 w-50-m w-60-l pt4 pt0-ns pl4-ns">
         <div class="flex flex-column flex-row-ns justify-around flex-wrap items-center">
           <div class="w-100 w-third-l pv3 ph4 pa4-ns">
-            <img class="mb3" src="/images/castleforge-logo.svg" alt="Castleforge logo">
+            <img class="mb3 partner-logo" src="/images/castleforge-logo.svg" alt="Castleforge logo">
             <span class="db f4 mb1">Rachael Pittaway</span>
             <span class="db f4 mb3">Developer</span>
             <a class="sans-serif link gray hover-white mb2 db f5" href="tel:07562989805">+44 (0) 75 6298 9805</a>
             <a class="sans-serif link gray hover-white db f5" href="mailto:rpittaway@castleforgepartners.com">rpittaway@castleforgepartners.com</a>
           </div>
           <div class="w-100 w-third-l pv3 ph4 pa4-ns">
-            <img class="mb3" src="/images/cbre-logo.svg" alt="CBRE logo">
+            <img class="mb3 partner-logo" src="/images/cbre-logo.svg" alt="CBRE logo">
             <span class="db f4 mb1">David Wright</span>
             <span class="db f4 mb3">Joint Leasing Agent</span>
             <a class="sans-serif link gray hover-white mb2 db f5" href="tel:02890436745 ">+44 (0) 28 9043 6745 </a>
             <a class="sans-serif link gray hover-white db f5" href="mailto:david.wright@cbre.com">david.wright@cbre.com</a>
           </div>
           <div class="w-100 w-third-l pv3 ph4 pa4-ns">
-            <img class="mb3" src="/images/mcconnell-logo.svg" alt="McConnell logo">
+            <img class="mb3 partner-logo" src="/images/mcconnell-logo.svg" alt="McConnell logo">
             <span class="db f4 mb1">Rory McConnell</span>
             <span class="db f4 mb3">Joint Leasing Agent</span>
             <a class="sans-serif link gray hover-white mb2 db f5" href="tel:02890205902 ">+44 (0) 28 9020 5902</a>
@@ -656,7 +654,7 @@ $(document).ready(function() {
           $('.slider-for').slick({
               slidesToShow: 1,
               slidesToScroll: 1,
-              arrows: false,
+              arrows: true,
               asNavFor: '.slider-nav'
             });
 
@@ -665,13 +663,20 @@ $(document).ready(function() {
               slidesToScroll: 4,
               asNavFor: '.slider-for',
               dots: false,
-              arrows: false,
+              arrows: true,
               centerMode: true,
-              focusOnSelect: true
+              focusOnSelect: true,
+              responsive: [
+                {
+                  breakpoint: 500,
+                  settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                  }
+                }
+              ]
             });
       </script>
-
-
 
     </footer>
 

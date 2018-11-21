@@ -2,10 +2,13 @@
   <div class="db">
     <div class="mw9 center flex flex-column flex-row-ns">
       <div class="w-100 w-50-m w-40-l pr4-ns">
-        <h2 class="ttu f2 f1-l normal ma0 heading">Contact</h2>
+        <h2 class="ttu f2 f1-l ma0">Contact</h2>
+        {% if page.url contains 'contact'%}
         <div class="cf">
-          <hr class="fl mv2 w-100 w-80-ns bg-gray">
+          <hr class="fl mv3 w-100 w-80-ns bg-gray">
         </div>
+        <h3 class="ttu f3 f2-l ma0 mt1 mb4">Get in touch</h3>
+        {%endif%}
         <form id="contact-form" action="https://formspree.io/{{site.email}}" method="POST">
           <fieldset class="ba b--transparent ph0 mh0">
             <legend class="ph0 mh0 fw6 clip">Contact us</legend>
@@ -34,7 +37,7 @@
             <input type="hidden" name="_cc" value="david.wright@cbre.com,rory.mcconnell@mcconnellproperty.com,luke.mcclelland@cbre.com,chelsea@riverhousebelfast.co.uk" />
           </fieldset>
           <div class="mt4">
-            <button type="submit" class="button-reset pv3 lh-solid white ba b--transparent w-100 submit bg-animate bg-blue hover-bg-dark-blue link ttu f4">Submit</button>
+            <button type="submit" class="button-reset pv3 lh-solid white ba b--transparent w-100 w-90-ns submit bg-animate bg-blue hover-bg-dark-blue link ttu f4">Submit</button>
           </div>
         </form>
 
@@ -42,21 +45,21 @@
       <div class="w-100 w-50-m w-60-l pt4 pt0-ns pl4-ns">
         <div class="flex flex-column flex-row-ns justify-around flex-wrap items-center">
           <div class="w-100 w-third-l pv3 ph4 pa4-ns">
-            <img class="mb3" src="/images/castleforge-logo.svg" alt="Castleforge logo">
+            <img class="mb3 partner-logo" src="/images/castleforge-logo.svg" alt="Castleforge logo">
             <span class="db f4 mb1">Rachael Pittaway</span>
             <span class="db f4 mb3">Developer</span>
             <a class="sans-serif link gray hover-white mb2 db f5" href="tel:07562989805">+44 (0) 75 6298 9805</a>
             <a class="sans-serif link gray hover-white db f5" href="mailto:rpittaway@castleforgepartners.com">rpittaway@castleforgepartners.com</a>
           </div>
           <div class="w-100 w-third-l pv3 ph4 pa4-ns">
-            <img class="mb3" src="/images/cbre-logo.svg" alt="CBRE logo">
+            <img class="mb3 partner-logo" src="/images/cbre-logo.svg" alt="CBRE logo">
             <span class="db f4 mb1">David Wright</span>
             <span class="db f4 mb3">Joint Leasing Agent</span>
             <a class="sans-serif link gray hover-white mb2 db f5" href="tel:02890436745 ">+44 (0) 28 9043 6745 </a>
             <a class="sans-serif link gray hover-white db f5" href="mailto:david.wright@cbre.com">david.wright@cbre.com</a>
           </div>
           <div class="w-100 w-third-l pv3 ph4 pa4-ns">
-            <img class="mb3" src="/images/mcconnell-logo.svg" alt="McConnell logo">
+            <img class="mb3 partner-logo" src="/images/mcconnell-logo.svg" alt="McConnell logo">
             <span class="db f4 mb1">Rory McConnell</span>
             <span class="db f4 mb3">Joint Leasing Agent</span>
             <a class="sans-serif link gray hover-white mb2 db f5" href="tel:02890205902 ">+44 (0) 28 9020 5902</a>

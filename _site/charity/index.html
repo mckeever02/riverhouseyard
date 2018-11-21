@@ -280,7 +280,7 @@
           $('.slider-for').slick({
               slidesToShow: 1,
               slidesToScroll: 1,
-              arrows: false,
+              arrows: true,
               asNavFor: '.slider-nav'
             });
 
@@ -289,13 +289,20 @@
               slidesToScroll: 4,
               asNavFor: '.slider-for',
               dots: false,
-              arrows: false,
+              arrows: true,
               centerMode: true,
-              focusOnSelect: true
+              focusOnSelect: true,
+              responsive: [
+                {
+                  breakpoint: 500,
+                  settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                  }
+                }
+              ]
             });
       </script>
-
-
 
     </footer>
 

@@ -270,7 +270,7 @@
         <h1 class="ttu f2 f1-l dark-gray lh-title fw6">Belfast's newest Co-working Space</h1>
         <hr class="bg-gray mv4 w-100">
       </div>
-      <div class="w-100 w-50-ns flex justify-start justify-end-ns pl4-ns">
+      <div class="w-100 w-50-ns flex justify-start justify-center-ns pl4-ns">
         <img class="works-your-way w-100-ns" src="/images/works-your-way.svg" alt="Works your way">
       </div>
     
@@ -312,7 +312,7 @@
     <div class="flex flex-column flex-row-l flex-wrap-ns w-100">
       <div class="w-100 w-50-l mb4 mb0-ns">
       
-        <h2 class="ttu f2 f1-ns dark-gray lh-title fw6">Downloads</h2>
+        <h2 class="ttu f2 dark-gray lh-title fw6">Downloads</h2>
       
         <div class="db">
           <a class="pa3 dib w-auto tc lh-solid white ba b--transparent w-100 submit bg-animate bg-orange hover-bg-dark-orange link ttu f4 fw6"
@@ -320,7 +320,7 @@
         </div>
       
       </div>
-      <div class="w-100 w-50-l pa4 pa0-ns">
+      <div class="w-100 w-50-l pa4 pa0-ns pr0">
         <img src="/images/clockwise-map.svg" alt="Location of Clockwise Co-working spaces on map of United Kingdom">
       </div>
 
@@ -343,7 +343,7 @@
           $('.slider-for').slick({
               slidesToShow: 1,
               slidesToScroll: 1,
-              arrows: false,
+              arrows: true,
               asNavFor: '.slider-nav'
             });
 
@@ -352,13 +352,20 @@
               slidesToScroll: 4,
               asNavFor: '.slider-for',
               dots: false,
-              arrows: false,
+              arrows: true,
               centerMode: true,
-              focusOnSelect: true
+              focusOnSelect: true,
+              responsive: [
+                {
+                  breakpoint: 500,
+                  settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                  }
+                }
+              ]
             });
       </script>
-
-
 
     </footer>
 
