@@ -1,5 +1,5 @@
 name: River House
-tagline: A new wave of office and retail space in Belfast City Centre's Cathedral Quarter. Launching Q2 2018.
+tagline: A new wave of Grade A office and retail space in the heart of Belfast’s Cathedral Quarter.
 markdown: redcarpet
 highlighter: rouge # or rouge or null
 exclude: ["node_modules", "gulpfile.js", "package.json"]
@@ -14,6 +14,9 @@ permalink: pretty
 
 #baseurl: https://riverhousebelfast.co.uk
 url: https://riverhousebelfast.co.uk
+
+googlemaps: https://www.google.com/maps/dir//River+House+48-60+High+St/@54.600485,-5.9964596,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x4861090aab6d02d3:0x2fe7716f8d70ed18!2m2!1d-5.92642!2d54.6004058
+
 
 gems:
   - jekyll-sitemap
@@ -162,3 +165,8 @@ charity-instagram: https://www.instagram.com/caudwellchildren/
 charity-register: https://www.eventbrite.co.uk/e/climb-for-caudwell-children-tickets-36687495286
 
 charity-donate: https://www.eventbrite.co.uk/e/climb-for-caudwell-children-tickets-37337004987#tickets
+
+facebook: https://www.facebook.com/riverhousebelfast/
+twitter: https://twitter.com/RHBelfast
+instagram: https://www.instagram.com/riverhousebelfast/
+linkedin: https://www.linkedin.com/company/riverhousebelfast/

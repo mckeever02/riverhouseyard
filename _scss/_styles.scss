@@ -295,12 +295,12 @@ html, body {
 }
 
 ::-moz-selection {
-	background: white;
-  color: $black;
+	background: $black;
+  color: $white;
 }
 ::selection {
-	background: white;
-  color: $black;
+	background: $black;
+  color: $white;
 }
 
 .icon-md {

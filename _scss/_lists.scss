@@ -13,3 +13,26 @@
 */
 
 .list {         list-style-type: none; }
+
+.list-social {
+   padding-top: 2rem;
+   margin-top: -3rem;
+   svg {
+      width: 20px;
+      height: 20px;
+   }
+   @media #{$breakpoint-not-small}{
+      padding-top: 1rem;
+      svg {
+         width: 25px;
+         height: 25px;
+      }
+   }
+   @media #{$breakpoint-large}{
+      padding-top: 0;
+      svg {
+         width: 30px;
+         height: 30px;
+      }
+   }
+}
