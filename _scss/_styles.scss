@@ -163,6 +163,12 @@ html, body {
   @media #{$breakpoint-not-small} {
     padding-bottom: 30rem;
   }
+  @media (min-width:  1600px) {
+	  padding-bottom: 50rem;
+  }
+  @media (min-width:  1921px) {
+	  padding-bottom: 60rem;
+  }
 }
 
 .logo-md {
