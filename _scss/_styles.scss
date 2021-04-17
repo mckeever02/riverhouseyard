@@ -77,7 +77,7 @@ html, body {
 }
 
 .intro-home {
-  background-image: url('../images/home-bg.png'), 
+  background-image: url('../images/home-bg.png'),
   linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
   background-position: bottom left, center;
   background-size: 100%, cover;
@@ -88,7 +88,7 @@ html, body {
 }
 
 .intro-clockwise {
-  background-image: url('../images/clockwise-bg.png'), 
+  background-image: url('../images/clockwise-bg.png'),
   linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
   background-position: bottom right, center;
   background-size: 100%, cover;
@@ -102,7 +102,7 @@ html, body {
 }
 
 .intro-building {
-  background-image: url('../images/building-bg.png'), 
+  background-image: url('../images/building-bg.png'),
   linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)), url('../images/building-bg.jpg');;
   background-position: bottom right, center;
   background-size: 100%, cover, cover;
@@ -202,6 +202,10 @@ html, body {
 
 .grid-item--sea-faring {
   background-image: url('../images/sea-faring-past.jpg');
+}
+
+.grid-item--clockwise {
+  background-image: url('../images/clockwise-workspace.jpg');
 }
 
 .grid-item--text {
